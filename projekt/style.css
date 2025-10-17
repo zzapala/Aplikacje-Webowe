@@ -95,6 +95,8 @@ main h2 {
     width: 300px;
     height: 350px;
     object-fit: cover;
+    border: 1px solid #C0BCB3;
+
   }
   
   .movie_info {
