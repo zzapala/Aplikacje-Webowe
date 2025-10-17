@@ -28,6 +28,16 @@ header h1 {
     text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #333542;
+  transition: color 0.3s ease; 
+}
+
+a:hover {
+  color: #aba69b;
+}
+
 .topnav {
     overflow: hidden;
     display: flex;
@@ -147,6 +157,7 @@ main h2 {
 
   .movie_btn:hover {
     background-color: #1F2028;
+    color: #E8E7E1;
   }
 
   .movie_rating {
@@ -260,4 +271,24 @@ footer {
     font-size: 13px;
     font-family: Poppins;
     text-transform: uppercase;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f2f2ed;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333542;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1F2028;
 }
