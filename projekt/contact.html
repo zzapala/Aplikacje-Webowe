@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main style="margin-top: 50px;">
+        <h2>Kontakt</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eius perferendis voluptatem vel magni culpa voluptates omnis voluptate perspiciatis, doloremque numquam quae deleniti deserunt quos possimus incidunt sed accusamus maiores.</p>
+        <div id="contact_box">
+        <label for="topic" >Wybierz temat wiadomości:</label>
+        <select name="topic" id="topic">
+            <option value="suggestion">Sugestia filmowa</option>
+            <option value="collab">Nawiązanie współpracy</option>
+            <option value="complaints">Zgłoszenia</option>
+            <option value="other">Inne</option>
+        </select>
+        <textarea id="message_text" placeholder="Wprowadź treść wiadomości" rows="5" cols="33"></textarea>
+        <br>
+
+        <input type="text" id="mail" placeholder="E-mail" />
+        <input type="submit" id = "submit" value="Wyślij wiadomość" />
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
