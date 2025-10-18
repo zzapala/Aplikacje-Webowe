@@ -13,27 +13,37 @@
     <h2 id="header_title">wszystko wszędzie naraz</h2>
     <main>
         <p style="margin-bottom: 30px;">To moja strona. Są tu moje projekty. Aplikacje webowe. I w ogóle. Trzeba kliknąć, żeby zobaczyć opis. I na przycisk, żeby otworzyć projekt w nowej karcie.</p>
-        <div class="project-container">
+        <div class="project-container" data-category="lab">
             <div class="project" onclick="toggleDescription('desc1')">
                 <img src="icons/leaf.png" alt="Projekt 1 Thumbnail" class="project-thumbnail">
-              <h2>Laboratorium 1</h2>
-              <button class="btn" onclick="openProject(event, 'Lab_01')">Zobacz projekt</button>
+                <h2>Laboratorium 1</h2>
+                <button class="btn" onclick="openProject(event, 'Lab_01')">Zobacz projekt</button>
             </div>
             <p class="description" id="desc1">
-              To jest opis projektu 1. Tutaj możesz dodać więcej informacji o tym, co robi, jak działa albo jakie technologie wykorzystuje.
+                To jest opis projektu 1. Laboratorium z podstaw HTML/CSS.
             </p>
-          </div>
-          <div class="project-container">
+        </div>
+        
+        <div class="project-container" data-category="project">
             <div class="project" onclick="toggleDescription('desc2')">
                 <img src="icons/leaf.png" alt="Projekt 2 Thumbnail" class="project-thumbnail">
-              <h2>Projekt</h2>
-              <button class="btn" onclick="openProject(event, 'projekt')">Zobacz projekt</button>
+                <h2>Projekt</h2>
+                <button class="btn" onclick="openProject(event, 'projekt')">Zobacz projekt</button>
             </div>
             <p class="description" id="desc2">
-              To jest opis projektu 1. Tutaj możesz dodać więcej informacji o tym, co robi, jak działa albo jakie technologie wykorzystuje.
+                To jest opis projektu 2. Główny projekt semestralny.
             </p>
-          </div>
+        </div>
+    <div class="filter-buttons">
+        <button class="filter-btn active" onclick="filterProjects('all')">Wszystkie</button>
+        <button class="filter-btn" onclick="filterProjects('lab')">Laboratoria</button>
+        <button class="filter-btn" onclick="filterProjects('project')">Projekty</button>
+    </div>
+
     </main>
+    <footer>
+        Zuzanna Zapała
+    </footer>
 
     <script>
     function toggleDescription(id) {
@@ -44,6 +54,24 @@
     function openProject(event, link) {
       event.stopPropagation();
       window.open(link, '_blank');
+    }
+
+    function filterProjects(category) {
+        // Aktualizuj przyciski
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        event.target.classList.add('active');
+        
+        // Filtruj projekty
+        const projects = document.querySelectorAll('.project-container');
+        projects.forEach(project => {
+            if (category === 'all' || project.getAttribute('data-category') === category) {
+                project.classList.remove('hidden');
+            } else {
+                project.classList.add('hidden');
+            }
+        });
     }
     </script>
 </body>

@@ -123,3 +123,37 @@ main {
     color: #ddd7cb;
     text-shadow: none;
   }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    color: #eff1e5;
+    font-family: Poppins, sans-serif;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+  }
+
+  .filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+.filter-btn {
+    margin: 5px;
+    padding: 8px 16px;
+    border: 1px solid #ddd7cb;
+    background: #eff1e5;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #412f23;
+    font-family: Poppins, sans-serif;
+}
+.filter-btn.active {
+    background: #412f23;
+    color: #ddd7cb;
+}
+.project-container {
+    transition: all 0.3s ease;
+}
+.project-container.hidden {
+    display: none;
+}
