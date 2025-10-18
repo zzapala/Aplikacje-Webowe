@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona główna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="Lab_01/">Lab 1</a>
-    <br>
-    <a href="projekt/">Projekt</a>
+    <h2 id="header_title">wszystko wszędzie naraz</h2>
+    <main>
+        <p style="margin-bottom: 30px;">To moja strona. Są tu moje projekty. Aplikacje webowe. I w ogóle. Trzeba kliknąć, żeby zobaczyć opis. I na przycisk, żeby otworzyć projekt w nowej karcie.</p>
+        <div class="project-container">
+            <div class="project" onclick="toggleDescription('desc1')">
+                <img src="icons/leaf.png" alt="Projekt 1 Thumbnail" class="project-thumbnail">
+              <h2>Laboratorium 1</h2>
+              <button class="btn" onclick="openProject(event, 'Lab_01')">Zobacz projekt</button>
+            </div>
+            <p class="description" id="desc1">
+              To jest opis projektu 1. Tutaj możesz dodać więcej informacji o tym, co robi, jak działa albo jakie technologie wykorzystuje.
+            </p>
+          </div>
+          <div class="project-container">
+            <div class="project" onclick="toggleDescription('desc2')">
+                <img src="icons/leaf.png" alt="Projekt 2 Thumbnail" class="project-thumbnail">
+              <h2>Projekt</h2>
+              <button class="btn" onclick="openProject(event, 'projekt')">Zobacz projekt</button>
+            </div>
+            <p class="description" id="desc2">
+              To jest opis projektu 1. Tutaj możesz dodać więcej informacji o tym, co robi, jak działa albo jakie technologie wykorzystuje.
+            </p>
+          </div>
+    </main>
+
+    <script>
+    function toggleDescription(id) {
+      const desc = document.getElementById(id);
+      desc.classList.toggle('show');
+    }
+
+    function openProject(event, link) {
+      event.stopPropagation();
+      window.open(link, '_blank');
+    }
+    </script>
 </body>
 </html>
