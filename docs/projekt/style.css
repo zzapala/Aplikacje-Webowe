@@ -292,3 +292,91 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: #1F2028;
 }
+
+/* =============================== */
+/* 📱 RESPONSYWNOŚĆ — TELEFONY     */
+/* =============================== */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  main {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .topnav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topnav a {
+    width: 100%;
+    margin: 2px 0;
+    font-size: 16px;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+
+  .movie_card {
+    flex-direction: column; /* obrazek nad opisem */
+    align-items: center;
+  }
+
+  .movie_card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .movie_info {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .movie_info h3 {
+    font-size: 24px;
+  }
+
+  .movie_info_text {
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  .movie_actions {
+    flex-direction: column;
+  }
+
+  .movie_btn, .movie_rating {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 15px 0;
+  }
+}
+
+/* =============================== */
+/* 💻 TABLETY                      */
+/* =============================== */
+@media (max-width: 1024px) and (min-width: 769px) {
+  main {
+    width: 90%;
+  }
+
+  .movie_card img {
+    width: 40%;
+  }
+
+  .movie_info {
+    padding: 20px;
+  }
+
+  .movie_info h3 {
+    font-size: 26px;
+  }
+}
