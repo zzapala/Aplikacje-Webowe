@@ -293,9 +293,7 @@ footer {
   background: #1F2028;
 }
 
-/* =============================== */
-/* 📱 RESPONSYWNOŚĆ — TELEFONY     */
-/* =============================== */
+/* responsywność dla telefonów */
 @media (max-width: 768px) {
   body {
     font-size: 15px;
@@ -322,13 +320,15 @@ footer {
   }
 
   .movie_card {
-    flex-direction: column; /* obrazek nad opisem */
+    flex-direction: column;
     align-items: center;
+    width: 91%;
   }
 
   .movie_card img {
     width: 100%;
-    height: auto;
+    height: 350px;
+    object-fit: cover;
   }
 
   .movie_info {
@@ -351,7 +351,7 @@ footer {
   }
 
   .movie_btn, .movie_rating {
-    width: 100%;
+    width: 95%;
   }
 
   footer {
@@ -360,9 +360,7 @@ footer {
   }
 }
 
-/* =============================== */
-/* 💻 TABLETY                      */
-/* =============================== */
+/* responsywność dla tabletów */
 @media (max-width: 1024px) and (min-width: 769px) {
   main {
     width: 90%;
