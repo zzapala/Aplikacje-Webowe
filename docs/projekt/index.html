@@ -16,7 +16,13 @@
     <main style="margin-top: 50px;">
         <h2>Strona główna</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nemo error laboriosam nesciunt minima architecto tempora porro exercitationem ducimus fugit neque id aliquam. Libero itaque maiores, voluptate laborum odio non.</p>
-        <div class="movie_card">
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProjects('all')">Wszystkie</button>
+            <button class="filter-btn" onclick="filterProjects('musical')">Musicale</button>
+            <button class="filter-btn" onclick="filterProjects('polski')">Polskie filmy</button>
+            <button class="filter-btn" onclick="filterProjects('dramat')">Dramaty</button>
+        </div>
+        <div class="movie_card" data-category="musical">
             <img src="home_pics/lll2.png" alt="Movie 1">
             <div class="movie_info">
                 <div class="movie_info_text">
@@ -27,11 +33,11 @@
                 </div>
             <div class="movie_actions">
                 <div class="movie_rating">⭐ 8/10</div>
-                <a href = "#link" class="movie_btn">Przeczytaj recenzję!</a>
+                <a href = "rec.html" class="movie_btn">Przeczytaj recenzję!</a>
               </div>
             </div>
         </div>
-        <div class="movie_card">
+        <div class="movie_card" data-category="polski">
             <div class="movie_info">
                 <div class="movie_info_text">
                     <h3>Niewinni czarodzieje</h3>
@@ -46,7 +52,7 @@
             </div>
             <img src="home_pics/niewinni.jpg" alt="Niewinni czarodzieje">
         </div>
-        <div class="movie_card">
+        <div class="movie_card" data-category="dramat">
             <img src="home_pics/mbts.png" alt="Manchester by the Sea">
             <div class="movie_info">
                 <div class="movie_info_text">
@@ -65,7 +71,8 @@
     <footer>
         <div id="footer_name">Zuzanna Zapała</div>
       </footer>
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
     
 </body>
 </html>

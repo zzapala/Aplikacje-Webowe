@@ -293,6 +293,57 @@ footer {
   background: #1F2028;
 }
 
+
+.filter-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+.filter-btn {
+  margin: 5px;
+  padding: 8px 16px;
+  border: 1px solid #1F2028;
+  background: #333542;
+  cursor: pointer;
+  color: #E8E7E1;
+  font-family: Poppins, sans-serif;
+}
+.filter-btn.active {
+  background: #74778a;
+  border: 1px solid #5e627a;
+  color: #ddd7cb;
+}
+.movie_card {
+  transition: all 0.3s ease;
+}
+.movie_card.hidden {
+  display: none;
+}
+
+
+.rec_pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #1F2028;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(rec_pics/rec_lala.png);
+    color: #E8E7E1;
+    font-size: 24px;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+
 /* responsywność dla telefonów */
 @media (max-width: 768px) {
   body {
