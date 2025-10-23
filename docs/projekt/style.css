@@ -343,6 +343,13 @@ footer {
 }
 
 
+::selection {
+  background: #333542;
+  color: #DEDCD5;
+  text-shadow: none;
+}
+
+
 
 /* responsywność dla telefonów */
 @media (max-width: 768px) {

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Website</title>
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<main class="main-container">
+<h1>Welcome to My Website</h1>
+</main>
+<script src="index.js"></script>
+<script>
+    // console.log('Page loaded');
+
+    // let a = 5;
+    // let b = "hello";
+    // let c = false;
+
+    // console.log(a, b, c);
+    // console.log(typeof a, typeof b, typeof c);
+
+    // const student = {
+    //     name: "Zuza",
+    //     age: 20,
+    // }
+
+    // student.name = "Zuzanna";
+    // student["name"] = "Zuzia";
+    // console.log(student);
+
+    // const x = student
+    // x.name = "Zuza"
+    // console.log(student);
+
+    // const T1 = [2,3,4]
+    // const T2 = Array(5,6,7)
+    // const T3 = new Array(8,9,10)
+    // console.log(T1, T2, T3)
+    // T1.push(5)
+    // console.log(T1)
+
+    const T = [12, 15, 20, 25, 30];
+    const T2 = T.filter((x) => {
+        return x > 18;
+    })
+    console.log(T2);
+
+    const T3 = T.map((x) => x * 2);
+    console.log(T3);
+
+    const people = [23, 21, 25, 26].map((element) => {
+        return {
+            wiek: element
+        }
+    })
+
+    console.log(people);
+    
+</script>
+</body>
+</html>
