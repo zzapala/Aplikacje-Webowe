@@ -38,6 +38,8 @@ a:hover {
   color: #aba69b;
 }
 
+
+/* menu */
 .topnav {
     overflow: hidden;
     display: flex;
@@ -94,6 +96,7 @@ main h2 {
     margin-bottom: 0;
 }
 
+/* div ze zdjęciem i opisem filmu */
 .movie_card {
     display: flex;
     align-items: flex-start;
@@ -178,6 +181,8 @@ main h2 {
     margin-bottom: -5px;
 }
 
+/* segment kontaktowy */
+
 #mail {
     color: #333542;
     background-color: #D9D6CE;
@@ -239,7 +244,7 @@ main h2 {
     background-color: #1F2028;
 }
 
-
+/* galeria zdjęciowa */
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -273,27 +278,25 @@ footer {
     text-transform: uppercase;
 }
 
-/* width */
+
+/* suwaki */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f2f2ed;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #333542;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #1F2028;
 }
 
-
+/* filtrowanie po gatunkach */
 .filter-buttons {
   text-align: center;
   margin: 20px 0;
@@ -319,7 +322,7 @@ footer {
   display: none;
 }
 
-
+/* zdjęcie w recenzji */
 .rec_pic {
     display: block;
     margin-left: auto;
@@ -331,7 +334,6 @@ footer {
     margin-bottom: 10px;
     background-size: cover;
     background-position: center;
-    background-image: url(rec_pics/rec_lala.png);
     color: #E8E7E1;
     font-size: 24px;
     font-family: Poppins;
@@ -343,6 +345,7 @@ footer {
 }
 
 
+/* styl zaznaczania */
 ::selection {
   background: #333542;
   color: #DEDCD5;
