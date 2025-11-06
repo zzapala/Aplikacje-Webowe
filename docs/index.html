@@ -35,6 +35,17 @@
                 To jest opis projektu 2. Pierwszy projekt semestralny.
             </p>
         </div>
+
+        <div class="project-container" data-category="lab">
+            <div class="project" onclick="toggleDescription('desc3')">
+                <img src="icons/leaf.png" alt="Projekt 1 Thumbnail" class="project-thumbnail">
+                <h2>Laboratorium 3</h2>
+                <button class="btn" onclick="openProject(event, 'Lab_03')">Zobacz projekt</button>
+            </div>
+            <p class="description" id="desc3">
+                To jest opis projektu 3. Laboratorium z podstaw JavaScript.
+            </p>
+        </div>
     <div class="filter-buttons">
         <button class="filter-btn active" onclick="filterProjects('all')">Wszystkie</button>
         <button class="filter-btn" onclick="filterProjects('lab')">Laboratoria</button>
