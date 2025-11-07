@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(137, 176, 137);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+
+.post-title {
+    font-size: 24px;
+    color: #365a34;
+
+}
+
+.post {
+    font-size: 18px;
+    color: #333;
+    background-color: #eceac2;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: rgb(67, 95, 67) 2px 2px 5px;
+}
+.post-likes {
+    display: flex;
+    align-items: center;
+}
+
+.post-dislikes-button {
+    background-color: rgb(82, 29, 29);
+    border-radius: 10px;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.post-likes-button {
+    background-color: #403d71;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.bad-post {
+    background-color: #ffcccc;
+}

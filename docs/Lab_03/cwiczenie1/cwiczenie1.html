@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćwiczenie 1</title>
+    <link rel="stylesheet" href="cw1_style.css">
+</head>
+<body>
+    <main>
+    <div class="content">
+    <h2>Stoper:</h2>
+    <div id="display"></div>
+    <div class="buttons">
+    <button onclick="startTimer()" id="startBtn">Start</button>
+    <button onclick="stopTimer()"id="stopBtn">Stop</button>
+    <button onclick="resetTimer()" id="resetBtn">Reset</button>
+    </div>
+</div>
+</main>
+
+
+    <script>
+        let seconds = 0;
+        let minutes = 0;
+        let timer = null;
+
+        function updateDisplay() {
+            if (minutes > 0) {
+                document.getElementById('display').textContent = minutes + ' m \n' + seconds + ' s';
+                return;
+            }
+            else {
+                document.getElementById('display').textContent = seconds + ' s';
+                return;
+            }
+            
+        }
+
+        function startTimer() {
+            if (timer===null) {
+                timer = setInterval(() => {
+                    seconds++;
+                    if (seconds === 60) {
+                        minutes++;
+                        seconds = 0;
+                    }
+                    updateDisplay();
+                }, 100);
+            }
+        }
+
+        function stopTimer() {
+            clearInterval(timer);
+            timer = null;
+        }
+
+        function resetTimer() {
+            stopTimer();
+            seconds = 0;
+            minutes = 0;
+            updateDisplay();
+        }
+
+        updateDisplay();
+    </script>
+</body>
+</html>
