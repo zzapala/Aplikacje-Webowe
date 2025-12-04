@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flappy ptak</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div id="game">
+    <canvas id="c"></canvas>
+    <div id="hud" style="opacity:0">0</div>
+    <div id="scoreList"></div>
+
+    <div class="overlay" id="welcome">
+      <div class="centerBox menu">
+        <h1 style="font-family:monospace;color:#ffd24d; text-shadow:0 2px 0 #000">GET READY</h1>
+        <p style="color:#fff">Naciśnij SPACJĘ lub kliknij, aby wzbić ptaka</p>
+        <button id="startBtn">Rozpocznij</button>
+      </div>
+      
+    </div>
+
+    <div class="overlay" id="gameOver" style="display:none;">
+      <div class="centerBox_menu">
+        <h1 id="go_title"></h1>
+        
+        <div style="color:#fff">Twój wynik: <span id="lastScore">0</span></div>
+        <div style="color:#fff">Najlepszy wynik: <span id="bestScore">0</span></div>
+        <div style="color:#fff;margin-top:8px">Top 5</div>
+        <ol id="top5" style="color:#fff"></ol>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <button id="retry">Zagraj ponownie</button>
+          <button id="toMenu">Do menu</button>
+          <button id="resetScores">Resetuj wyniki</button>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+ <script src="script.js"></script>
+
+</body>
+</html>

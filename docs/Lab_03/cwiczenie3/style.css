@@ -1,0 +1,125 @@
+/* Styl dla całego ciała */
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    font-family: 'Poppins', sans-serif;
+    color: #322d2a;
+    margin: 0;
+    padding: 0;
+}
+
+/* Animacja gradientu */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Styl dla tabeli */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #322d2a;
+    font-size: 14px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+td:hover {
+    background-color: #ffdfdf;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+#back-button {
+    text-decoration: none;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#back-button:hover {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    transform: scale(1.1);
+}
+
+#search-bar {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #ff758c;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+#search-bar:focus {
+    box-shadow: 0 0 10px rgba(255, 117, 140, 0.5);
+    border-color: #ff7eb3;
+}
+
+#filter-dropdown {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #ff758c;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+#filter-dropdown:hover {
+    box-shadow: 0 0 10px rgba(255, 117, 140, 0.5);
+    border-color: #ff7eb3;
+}
+
+.product-id-cell {
+    background: linear-gradient(135deg, #ffdfdf, #fff);
+    color: #322d2a;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) td {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+table tr:hover td {
+    background-color: #ffe6e6;
+    cursor: pointer;
+}

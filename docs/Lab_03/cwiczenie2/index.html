@@ -1,11 +1,36 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ćwiczenie 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    
+    <main>
+    <a href ="../index.html" id="back-button">← Powrót</a>
+    <div class="content">
+        <h2>Generator haseł</h2>
+        <div>
+        <h4>Minimalna liczba znaków: </h4> <input type="text" id="min-len" placeholder="Wprowadź liczbę..."/><br>
+        <h4>Maksymalna liczba znaków: </h4> <input type="text" id="max-len" placeholder="Wprowadź liczbę..."/><br><br>
+        <input type="checkbox" onclick='handleClick(this);' id="include-uppercase" checked />
+        <label for="include-uppercase">Uwzględnij wielkie litery</label><br />
+        <input type="checkbox" onclick='handleClick(this);' id="include-symbols" checked />
+        <label for="include-symbols">Uwzględnij znaki specjalne</label><br />
+        <button id="generate-button" type="submit">Generuj</button>
+        </div>
+        <h3>Wygenerowane hasło:</h3>
+        <div id="result-container">
+            <p id="result"></p>
+        </div>
+    </div>
+</main>
+<script src="index.js"></script>
 </body>
 </html>
