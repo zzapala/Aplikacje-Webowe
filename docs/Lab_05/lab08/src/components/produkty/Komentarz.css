@@ -1,0 +1,62 @@
+/* Styl dla kontenera komentarza */
+.komentarz {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    padding: 16px; 
+    margin-bottom: 16px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    width: 500px;
+    
+  }
+  
+  .id_uzytkownik {
+    font-size: 13px; 
+    color: #555;
+    margin-right: 10px;
+    margin-bottom: -15px;
+  }
+  
+  
+  .imie_nazwisko {
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #333; 
+    margin: 14px 0; 
+  }
+  
+  
+  .box_komentarz {
+    font-size: 16px; 
+    color: #444;
+    margin: 8px 0px;
+    line-height: 1.5;
+  }
+  
+  
+  .komentarz p {
+    color: #666; 
+  }
+  
+  .przycisk {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px; 
+    padding: 8px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  .przycisk:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .przycisk:active {
+    background-color: #004494;
+  }
