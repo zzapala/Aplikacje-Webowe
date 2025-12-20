@@ -1,0 +1,33 @@
+
+.nav-list {
+    background-color: #e1deda;
+    position: sticky;
+    top: 0; 
+    text-align: center;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    box-sizing: border-box;
+    color: #F6F4F1;
+    border: 1px solid #e1deda;
+}
+
+.nav-list li {
+    display: inline;
+    padding: 10px 10px;
+    box-sizing: border-box;
+
+    transition: transform 0.2s;
+    
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #2B2B2B;
+}
+
+.nav-list li:hover {
+    background-color: rgb(212, 210, 205);
+    transform: all 0.2s;
+    transition: transform 0.2s;
+}

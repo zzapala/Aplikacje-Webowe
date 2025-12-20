@@ -1,0 +1,15 @@
+
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  background-color: #2d2d2d;
+}
+
+.app-container {
+  background-color: #454545;
+  padding: 20px;
+  border-radius: 10px;
+  width: 900px;
+  margin: 40px auto; 
+}

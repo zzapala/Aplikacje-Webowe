@@ -1,29 +1,29 @@
 /* Styl dla kontenera komentarza */
 .komentarz {
-    background-color: #f9f9f9; 
-    border: 1px solid #ddd;
+    background-color: #3b3b3b; 
+    border: 1px solid #242424;
     border-radius: 8px; 
     padding: 16px; 
     margin-bottom: 16px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
     width: 500px;
     
   }
   
   .id_uzytkownik {
     font-size: 13px; 
-    color: #555;
+    color: white;
     margin-right: 10px;
     margin-bottom: -15px;
   }
   
   
   .imie_nazwisko {
-    font-size: 18px; 
+    font-size: 16px; 
     font-weight: bold; 
     color: #333; 
-    margin: 14px 0; 
+    margin-bottom:-3px; 
   }
   
   
@@ -36,7 +36,7 @@
   
   
   .komentarz p {
-    color: #666; 
+    color: #cacaca; 
   }
   
   .przycisk {

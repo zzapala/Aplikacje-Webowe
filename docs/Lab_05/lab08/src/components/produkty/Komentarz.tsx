@@ -23,7 +23,6 @@ export function Komentarz({ komentarz }: { komentarz: KomentarzProps })  {
         <div className="komentarz">
             <p className="id_uzytkownik">@{komentarz.user.username}</p>
             <p className="imie_nazwisko">{komentarz.user.fullName}</p>
-            <hr></hr>
             <p className="box_komentarz">{komentarz.body}</p>
 
             <hr></hr>
