@@ -1,0 +1,32 @@
+/* src/components/Filter.css */
+.filter {
+    margin-bottom: 20px;
+  }
+  
+  .filter__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-main);
+  }
+  
+  .filter__select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    background-color: var(--bg-section);
+    color: var(--text-main);
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .filter__select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(82, 68, 70, 0.1);
+  }
+  
+  .filter__select option {
+    padding: 8px;
+  }

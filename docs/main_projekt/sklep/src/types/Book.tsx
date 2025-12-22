@@ -8,4 +8,5 @@ export interface Book {
     description: string
     stock: number
     isbn: string
+    category: string
   }

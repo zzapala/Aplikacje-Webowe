@@ -1,6 +1,6 @@
 
 .nav-list {
-    background-color: #e1deda;
+    background-color: var(--accent);
     position: sticky;
     top: 0; 
     text-align: center;
@@ -8,8 +8,9 @@
     display: flex;
     margin: 0;
     box-sizing: border-box;
-    color: #F6F4F1;
-    border: 1px solid #e1deda;
+    border: 1px solid var(--accent-hover);
+    width: 100%;
+    
 }
 
 .nav-list li {
@@ -23,11 +24,11 @@
 
 .nav-list a {
     text-decoration: none;
-    color: #2B2B2B;
+    color: var(--text-buttons);
 }
 
 .nav-list li:hover {
-    background-color: rgb(212, 210, 205);
+    background-color: var(--accent-hover);
     transform: all 0.2s;
     transition: transform 0.2s;
 }

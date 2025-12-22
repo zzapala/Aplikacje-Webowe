@@ -1,0 +1,34 @@
+
+.filter-column {
+    background-color: var(--bg-section);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    border: 1px solid var(--accent-muted-hover)
+  }
+  
+  .filter-column__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--text-main);
+  }
+  
+  .filter-column__section {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--accent-mutted-hover);
+  }
+  
+  .filter-column__section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .filter-column__section h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+  }

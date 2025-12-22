@@ -1,6 +1,33 @@
-body {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+/* src/pages/Produkty.css */
+.products-page {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 24px 16px;
+  }
+  
+  .products-page__title {
+    margin-bottom: 32px;
+    color: var(--text-main);
+  }
+  
+  .products-page__layout {
+    display: grid;
+    grid-template-columns: 1fr 280px ;
+    gap: 32px;
+  }
+  
+  /* Responsywność */
+  @media (max-width: 768px) {
+    .products-page__layout {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
     
-}
+    .products-page__sidebar {
+      order: 2;
+    }
+    
+    .products-page__content {
+      order: 1;
+    }
+  }
