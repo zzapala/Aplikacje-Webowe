@@ -10,7 +10,7 @@ function BookComponent(param: {book: Book}) {
       <img src={book.cover} alt={`Okładka książki ${book.title}`} />
       <div className="book-title">{book.title}</div>
       <div className="book-author">{book.author}</div>
-      <div className="book-price">{book.price} zł</div>
+      <div className="book-price">{book.price.toFixed(2)} zł</div>
       <div id="book-cart" className="book-link">
       <Link to={`/cart/add/${book.id}`} className="add-to-cart-button">Dodaj do koszyka</Link>
         </div>

@@ -1,32 +1,130 @@
-/* src/components/Filter.css */
+/* src/components/Filter/Filter.css */
+
 .filter {
-    margin-bottom: 20px;
-  }
-  
-  .filter__label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: var(--text-main);
-  }
-  
-  .filter__select {
     width: 100%;
-    padding: 10px 12px;
-    border: 1px solid var(--border-light);
-    border-radius: 4px;
+  }
+  
+  /* Grupa filtrów */
+  .filter-group {
+    margin-bottom: 1.75rem;
+    position: relative;
+  }
+  
+  .filter-label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .filter-select-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-select-wrapper::after {
+    content: "▼";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent-muted);
+    font-size: 0.75rem;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .filter-select-wrapper:hover::after {
+    color: var(--accent-muted);
+  }
+  
+  .filter-select {
+    width: 100%;
+    padding: 1rem 2.5rem 1rem 1rem;
+    border: 2px solid var(--accent-muted);
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-weight: 500;
+    cursor: pointer;
+    appearance: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .filter-select:hover {
+    border-color: #cbd5e0;
+    box-shadow: 0 4px 12px rgba(69, 61, 61, 0.08);
+  }
+  
+  .filter-select:focus {
+    outline: none;
+    border-color: var(--accent-muted);
+    box-shadow: 0 0 0 4px rgba(114, 97, 97, 0.15);
+    transform: translateY(-1px);
+  }
+  
+  .filter-select:active {
+    transform: translateY(0);
+  }
+  
+  .filter-select option {
+    padding: 0.75rem;
+    font-size: 0.95rem;
     background-color: var(--bg-section);
     color: var(--text-main);
-    font-size: 1rem;
-    cursor: pointer;
   }
   
-  .filter__select:focus {
-    outline: none;
-    border-color: var(--accent);
-    box-shadow: 0 0 0 2px rgba(82, 68, 70, 0.1);
+  .filter-select option:hover {
+    background-color: var(--bg-section);
   }
   
-  .filter__select option {
-    padding: 8px;
+  .filter-select option:checked {
+    background-color: (--accent-muted);
+    color: var(--bg-section);
+    font-weight: 600;
+  }
+  
+  
+  .filter-select:focus {
+    animation: pulseBorder 2s infinite;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-group {
+      margin-bottom: 1.25rem;
+    }
+    
+    .filter-select {
+      padding: 0.875rem 2.25rem 0.875rem 0.875rem;
+      font-size: 0.95rem;
+    }
+    
+    .filter-label {
+      font-size: 0.875rem;
+    }
+  }
+  
+ 
+  
+
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    70% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }

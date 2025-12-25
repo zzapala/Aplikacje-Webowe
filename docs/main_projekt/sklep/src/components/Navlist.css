@@ -15,20 +15,25 @@
 
 .nav-list li {
     display: inline;
-    padding: 10px 10px;
     box-sizing: border-box;
-
+    padding: 10px 10px;
     transition: transform 0.2s;
     
 }
 
+
+
 .nav-list a {
     text-decoration: none;
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 10px;
     color: var(--text-buttons);
-}
+    z-index: 1000000;
+  }
+  
 
-.nav-list li:hover {
-    background-color: var(--accent-hover);
-    transform: all 0.2s;
-    transition: transform 0.2s;
+.nav-list a:hover{
+    background-color: var(--accent-hover)
 }

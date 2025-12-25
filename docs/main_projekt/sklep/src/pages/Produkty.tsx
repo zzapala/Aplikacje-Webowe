@@ -4,13 +4,26 @@ import "./Produkty.css"
 import { useState } from "react"
 import FilterColumn from "../components/FilterColumn"
 
+export type SortOption =   | "default" 
+| "price-asc" 
+| "price-desc" 
+| "title-asc" 
+| "title-desc" 
+| "author-asc"
+
 function Products() {
   const [selectedCategory, setSelectedCategory] = useState("All")
+  const [selectedSort, setSelectedSort] = useState<SortOption>("default")
+
 
   function handleFilter(event: React.ChangeEvent<HTMLSelectElement>) {
     setSelectedCategory(event.target.value)
-    console.log("Wybrana kategoria:", event.target.value)
-  }
+}
+
+function handleSortChange(sort: SortOption) {
+  setSelectedSort(sort)
+}
+
 
   return (
     <div className="products-page">
@@ -19,13 +32,15 @@ function Products() {
       <div className="products-page__layout">
         
         <main className="products-page__content">
-          <Books selectedCategory={selectedCategory} />
+          <Books selectedCategory={selectedCategory} selectedSort={selectedSort} />
         </main>
 
         <aside className="products-page__sidebar">
           <FilterColumn 
             handleFilter={handleFilter} 
             selectedCategory={selectedCategory} 
+            selectedSort = {selectedSort}
+            handleSortChange={handleSortChange}
           />
         </aside>
       </div>

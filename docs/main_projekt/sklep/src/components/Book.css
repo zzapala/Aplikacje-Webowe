@@ -25,22 +25,20 @@
 .book-title {
   font-size: 14px;
   font-weight: 600;
-  text-align: center;
   margin-bottom: 4px;
 }
 
 .book-author {
   font-size: 12px;
   color: #666;
-  text-align: center;
   margin-bottom: 8px;
 }
 
 .book-price {
   font-size: 16px;
   font-weight: 700;
-  text-align: center;
   margin-top: auto;
+
 }
 
 
@@ -84,3 +82,30 @@
   background: var(--accent-hover);
   transition: 0.5s;
 }
+
+
+@media (min-width: 480px) {
+  .book-item:nth-child(2n) {
+    border-right: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .book-item:nth-child(3n) {
+    border-right: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .book-item:nth-child(4n) {
+    border-right: none;
+  }
+}
+
+@media (min-width: 1240px) {
+  .book-item:nth-child(5n) {
+    border-right: none;
+  }
+}
+
+
