@@ -6,14 +6,18 @@ import "./NavList.css";
 function NavList() {
   return (
     <ul className="nav-list">
+      
       <li>
-        <Link to="/">Literatura piękna</Link>
+        <Link to="/products">Książki</Link>
       </li>
       <li>
-        <Link to="/cart">Fantasy i Science Fiction</Link>
+        <Link to="/new">Nowości</Link>
       </li>
       <li>
-        <Link to="/login">Powieści historyczne</Link>
+        <Link to="/rental">Wypożyczalnia</Link>
+      </li>
+      <li>
+        <Link to="/about">O nas</Link>
       </li>
     </ul>
   );

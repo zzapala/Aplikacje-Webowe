@@ -6,6 +6,7 @@
     text-align: center;
     list-style: none;
     display: flex;
+    justify-content:space-around;
     margin: 0;
     box-sizing: border-box;
     border: 1px solid var(--accent-hover);
@@ -16,8 +17,9 @@
 .nav-list li {
     display: inline;
     box-sizing: border-box;
-    padding: 10px 10px;
+    padding: 10px 0px;
     transition: transform 0.2s;
+    width: 25%
     
 }
 
@@ -28,7 +30,7 @@
     transition: all 0.4s;
     position: relative;
     overflow: hidden;
-    padding: 10px 10px;
+    padding: 10px 100px;
     color: var(--text-buttons);
     z-index: 1000000;
   }

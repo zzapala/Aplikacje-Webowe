@@ -25,8 +25,11 @@
   
 
 .logo {
-    margin: -20px 0;
     height: 120px;
+}
+
+.logo-pic {
+  margin-bottom: 0px ;
 }
 
 .header-icons {

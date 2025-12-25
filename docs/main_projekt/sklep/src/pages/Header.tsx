@@ -3,6 +3,7 @@ import "./Header.css"; // Stylizacja nagłówka
 import Navlist from "../components/Navlist";
 import Searchbar from "../components/Searchbar";
 import IconButton from "../components/IconButton";
+import { Link } from "react-router-dom";
 
 
 function Header() {
@@ -10,7 +11,9 @@ function Header() {
     return (
         <>
       <header className="header">
-        <img src="/logo6.png" alt="On Books" className="logo" />
+      <div className="logo-pic">
+      <Link to="/"><img src="/logo6.png" alt="On Books" className="logo" /></Link>
+      </div> 
         <Searchbar />
         <div className="header-icons">
             <IconButton src="/heart.png" alt="Zapisane" />
