@@ -1,0 +1,522 @@
+[
+  {
+    "title": "Duma i uprzedzenie",
+    "author": "Jane Austen",
+    "price": 39.99,
+    "cover": "https://m.media-amazon.com/images/I/81NLDvyAHrL._AC_UF894,1000_QL80_.jpg",
+    "description": "Jedna z najpopularniejszych powieści wszech czasów. Historia Elizabeth Bennet, drugiej z pięciu córek niezbyt majętnego szlachcica, która musi zmierzyć się z konwenansami epoki, trudnym charakterem matki oraz własnymi uprzedzeniami wobec wyniosłego, ale niezwykle bogatego pana Darcy'ego. Powieść zachwyca ironicznym humorem, błyskotliwymi dialogami i głęboką analizą psychologiczną społeczeństwa angielskiego przełomu XVIII i XIX wieku.",
+    "stock": 10,
+    "isbn": "978837515001",
+    "category": "Klasyki"
+  },
+  {
+    "title": "Rozważna i romantyczna",
+    "author": "Jane Austen",
+    "price": 34.50,
+    "cover": "https://m.media-amazon.com/images/I/81+UPrVQ7cL._AC_UF1000,1000_QL80_.jpg",
+    "description": "Powieść przedstawia losy dwóch sióstr Dashwood: powściągliwej Elinor oraz impulsywnej i uczuciowej Marianny. Po śmierci ojca i utracie rodzinnego majątku, kobiety muszą odnaleźć się w nowej, skromnej rzeczywistości. Austen mistrzowsko kontrastuje dwa podejścia do życia i miłości, zadając pytanie: czy w świecie rządzonym przez pieniądz i status społeczny lepiej kierować się chłodnym rozsądkiem, czy porywem serca?",
+    "stock": 8,
+    "isbn": "978837515002",
+    "category": "Klasyki"
+  },
+  {
+    "title": "Emma",
+    "author": "Jane Austen",
+    "price": 37.00,
+    "cover": "https://m.media-amazon.com/images/I/719kCJpvszL._SL1500_.jpg",
+    "description": "Główna bohaterka, Emma Woodhouse, jest bogata, inteligentna i... święcie przekonana o swoich swatkowskich umiejętnościach. Choć obiecała sobie nigdy nie wychodzić za mąż, z lubością aranżuje życie uczuciowe swoich znajomych, co prowadzi do serii zabawnych nieporozumień. To błyskotliwa komedia pomyłek, w której Emma uczy się, że ludzkie serca są znacznie bardziej skomplikowane, niż jej się wydawało.",
+    "stock": 5,
+    "isbn": "978837515003",
+    "category": "Klasyki"
+  },
+  {
+    "title": "Perswazje",
+    "author": "Jane Austen",
+    "price": 32.00,
+    "cover": "https://www.penguin.co.uk/_next/image?url=https%3A%2F%2Fcdn.penguin.co.uk%2Fdam-assets%2Fbooks%2F9780141439686%2F9780141439686-jacket-large.jpg&w=819&q=100",
+    "description": "Najbardziej dojrzała powieść Austen. Opowiada o Anne Elliot, która przed laty, ulegając namowom przyjaciółki, zerwała zaręczyny z ukochanym kapitanem Wentworthem z powodu jego braku majątku. Gdy po ośmiu latach los ponownie ich ze sobą styka, Anne musi zmierzyć się z bólem przeszłości i zobaczyć, czy dawne uczucie przetrwało próbę czasu i żalu. To wzruszająca opowieść o drugiej szansie i sile charakteru.",
+    "stock": 12,
+    "isbn": "978837515004",
+    "category": "Klasyki"
+  },
+  {
+    "title": "Opactwo Northanger",
+    "author": "Jane Austen",
+    "price": 30.00,
+    "cover": "https://m.media-amazon.com/images/I/81z3k9fEQfL._SL1500_.jpg",
+    "description": "Urocza parodia powieści gotyckiej. Młoda i naiwna Katarzyna Morland, fanka mrocznych romansów, zostaje zaproszona do starego opactwa Northanger. Wyobraźnia podsuwa jej mroczne sekrety i zbrodnie, które rzekomo mają dziać się w murach posiadłości. Austen z humorem punktuje absurdalność literatury grozy, tworząc jednocześnie ciepłą opowieść o dojrzewaniu i rozróżnianiu fikcji od rzeczywistości.",
+    "stock": 7,
+    "isbn": "978837515005",
+    "category": "Gotyckie"
+  },
+  {
+    "title": "Mansfield Park",
+    "author": "Jane Austen",
+    "price": 35.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg",
+    "description": "Fanny Price, uboga krewna wychowująca się w bogatym domu wujostwa, musi nieustannie udowadniać swoją wartość w otoczeniu, które traktuje ją z góry. Wyróżniając się moralną niezłomnością i skromnością, obserwuje moralny upadek i powierzchowność swoich kuzynów. To głęboka analiza etyczna, ukazująca walkę o zachowanie własnej tożsamości w świecie pełnym pokus i hipokryzji.",
+    "stock": 4,
+    "isbn": "978837515006",
+    "category": "Klasyki"
+  },
+  {
+    "title": "Druga płeć",
+    "author": "Simone de Beauvoir",
+    "price": 65.00,
+    "cover": "https://m.media-amazon.com/images/I/810KMGm3L7L._SL1500_.jpg",
+    "description": "Fundamentalne dzieło feminizmu i egzystencjalizmu. De Beauvoir z niespotykaną wnikliwością analizuje sytuację kobiety na przestrzeni dziejów – od biologii, przez historię, aż po mitologię. Stawia słynną tezę: 'Nie rodzimy się kobietami, stajemy się nimi', badając, jak kultura i społeczeństwo narzucają kobietom rolę 'Innego'. Lektura obowiązkowa dla każdego, kto chce zrozumieć korzenie walki o równouprawnienie.",
+    "stock": 3,
+    "isbn": "978837515007",
+    "category": "Filozoficzne"
+  },
+  {
+    "title": "Mandaryni",
+    "author": "Simone de Beauvoir",
+    "price": 55.00,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/7/7f/TheMandarins.jpg",
+    "description": "Nagrodzona Nagrodą Goncourtów powieść o powojennej francuskiej inteligencji. De Beauvoir opisuje środowisko lewicowych intelektualistów, którzy próbują odnaleźć się w nowej rzeczywistości politycznej po wyzwoleniu Paryża. To książka o rozczarowaniach ideologicznych, skomplikowanych romansach i trudnej sztuce bycia wiernym sobie w czasach wielkich przemian społecznych.",
+    "stock": 6,
+    "isbn": "978837515008",
+    "category": "Psychologiczne"
+  },
+  {
+    "title": "Zaproszona",
+    "author": "Simone de Beauvoir",
+    "price": 42.00,
+    "cover": "https://upload.wikimedia.org/wikipedia/en/0/08/SheCameToStay.jpg",
+    "description": "Debiut literacki autorki, który wstrząsnął czytelnikami. Historia trójkąta miłosnego między dojrzałą parą intelektualistów a młodą, kapryśną dziewczyną. Powieść jest fascynującym studium zazdrości, dominacji i destrukcyjnej siły, jaką może mieć druga osoba w naszym życiu. Autorka zadaje pytania o granice wolności w związku i cenę, jaką płacimy za próby życia poza normami społecznymi.",
+    "stock": 5,
+    "isbn": "978837515009",
+    "category": "Psychologiczne"
+  },
+  {
+    "title": "Nieznośna lekkość bytu",
+    "author": "Milan Kundera",
+    "price": 45.00,
+    "cover": "https://m.media-amazon.com/images/I/81tCmWIsbAL.jpg",
+    "description": "Kultowa powieść osadzona w realiach Praskiej Wiosny 1968 roku. Kundera splata losy czwórki bohaterów – Tomasza, Teresy, Sabiny i Franza – prowadząc filozoficzne rozważania nad opozycją między ciężarem a lekkością, wiernością a zdradą. To głęboka refleksja nad przypadkowością ludzkiego losu i politycznym uciskiem, który definiuje nasze wybory moralne.",
+    "stock": 15,
+    "isbn": "978837515010",
+    "category": "Współczesne"
+  },
+  {
+    "title": "Księga śmiechu i zapomnienia",
+    "author": "Milan Kundera",
+    "price": 43.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780060932145-L.jpg",
+    "description": "Złożona strukturalnie powieść-wariacja, składająca się z siedmiu części. Autor analizuje w niej temat pamięci historycznej i osobistej, pokazując, jak totalitaryzm próbuje wymazać ludzi i fakty z przeszłości. Kundera z niezwykłą ironią pisze o śmiechu, który może być zarówno wyrazem radości, jak i formą nihilizmu czy rozpaczy.",
+    "stock": 9,
+    "isbn": "978837515011",
+    "category": "Współczesne"
+  },
+  {
+    "title": "Żart",
+    "author": "Milan Kundera",
+    "price": 40.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780060995058-L.jpg",
+    "description": "Gorzka historia Ludwika, którego niewinny żart wysłany na kartce pocztowej niszczy mu życie w czasach stalinowskich w Czechosłowacji. Po latach bohater próbuje dokonać zemsty, jednak odkrywa, że historia jest jeszcze bardziej ironiczna niż jego młodzieńcze wygłupy. Powieść o tym, jak system potrafi zawłaszczyć prywatność i jak bezlitosny bywa los wobec naszych planów.",
+    "stock": 11,
+    "isbn": "978837515012",
+    "category": "Współczesne"
+  },
+  {
+    "title": "Lolita",
+    "author": "Vladimir Nabokov",
+    "price": 48.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780679723165-L.jpg",
+    "description": "Arcydzieło literatury światowej, które do dziś budzi skrajne emocje. Wyznania Humberta Humberta, mężczyzny ogarniętego obsesją na punkcie 'nimfetek', który opisuje swoją podróż przez Amerykę z dwunastoletnią Dolores Haze. Nabokov mistrzowsko operuje językiem, tworząc piękną, a zarazem przerażającą opowieść o manipulacji, destrukcji i tragicznym zaślepieniu.",
+    "stock": 20,
+    "isbn": "978837515013",
+    "category": "Współczesne"
+  },
+  {
+    "title": "Blady ogień",
+    "author": "Vladimir Nabokov",
+    "price": 52.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780679723424-L.jpg",
+    "description": "Niezwykły eksperyment literacki. Książka składa się z poematu fikcyjnego poety Johna Shade'a oraz obszernego komentarza jego sąsiada, Charlesa Kinbote'a. Czytelnik szybko odkrywa, że komentator jest postacią wielce niewiarygodną, a jego interpretacje mówią więcej o nim samym niż o tekście. To literacka łamigłówka, kryminał i traktat o wygnaniu w jednym.",
+    "stock": 4,
+    "isbn": "978837515014",
+    "category": "Współczesne"
+  },
+  {
+    "title": "Pnin",
+    "author": "Vladimir Nabokov",
+    "price": 38.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780679723417-L.jpg",
+    "description": "Pełna ciepła i melancholii historia Timofieja Pnina, rosyjskiego emigranta wykładającego na amerykańskim uniwersytecie. Pnin to postać tragikomiczna – niezdarny, zagubiony w nowej kulturze, a jednocześnie niezwykle szlachetny. Nabokov z ogromną czułością portretuje los człowieka wykorzenionego, szukającego swojego miejsca w świecie, który go nie rozumie.",
+    "stock": 6,
+    "isbn": "978837515015",
+    "category": "Współczesne"
+  },
+  {
+    "title": "Wichrowe Wzgórza",
+    "author": "Emily Brontë",
+    "price": 36.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780141439556-L.jpg",
+    "description": "Mroczna, burzliwa i absolutnie wyjątkowa opowieść o niszczycielskiej sile miłości i zemsty. Losy Heathcliffa i Catherine Earnshaw, splecione na surowych wrzosowiskach Yorkshire, to klasyka literatury gotyckiej. Emily Brontë stworzyła świat pełen dzikich emocji, duchów przeszłości i nienawiści, która przechodzi z pokolenia na pokolenie.",
+    "stock": 14,
+    "isbn": "978837515016",
+    "category": "Gotyckie"
+  },
+  {
+    "title": "Dziwne losy Jane Eyre",
+    "author": "Charlotte Brontë",
+    "price": 38.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780141441146-L.jpg",
+    "description": "Historia osieroconej dziewczyny, która dzięki determinacji i silnemu kręgosłupowi moralnemu zdobywa wykształcenie i niezależność. Jako guwernantka w posiadłości Thornfield Hall zakochuje się w tajemniczym Edwardzie Rochesterze. Jednak mroczny sekret ukryty na poddaszu domu wystawi jej miłość i zasady na najcięższą próbę. To manifest kobiecej siły i godności.",
+    "stock": 18,
+    "isbn": "978837515017",
+    "category": "Gotyckie"
+  },
+  {
+    "title": "Villette",
+    "author": "Charlotte Brontë",
+    "price": 41.00,
+    "cover": "https://m.media-amazon.com/images/I/91zjH5KysBL.jpg",
+    "description": "Lucy Snowe, kobieta bez majątku i rodziny, wyjeżdża do fikcyjnego miasta Villette w Belgii, by pracować w szkole dla dziewcząt. Tam przeżywa samotność, kryzys wiary i skomplikowane uczucia do surowego profesora Paula Emanuela. To wnikliwe studium psychologiczne samotności i wewnętrznego życia kobiety, która nie pasuje do ramy swojej epoki.",
+    "stock": 5,
+    "isbn": "978837515018",
+    "category": "Psychologiczne"
+  },
+  {
+    "title": "Lokatorka Wildfell Hall",
+    "author": "Anne Brontë",
+    "price": 39.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780140434743-L.jpg",
+    "description": "Jedna z najbardziej odważnych powieści XIX wieku. Helen Graham ucieka od męża alkoholika, by chronić syna i rozpocząć nowe życie jako malarka pod fałszywym nazwiskiem. Anne Brontë otwarcie porusza tematy przemocy domowej, alkoholizmu i prawa kobiety do samostanowienia, łamiąc ówczesne tabu literackie i społeczne.",
+    "stock": 7,
+    "isbn": "978837515019",
+    "category": "Klasyki"
+  },
+  {
+    "title": "Gra o tron",
+    "author": "George R.R. Martin",
+    "price": 49.90,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780553103540-L.jpg",
+    "description": "Początek monumentalnej sagi 'Pieśń Lodu i Ognia'. W krainie Westeros, gdzie pory roku trwają lata, rody szlacheckie walczą o panowanie nad Żelaznym Tronem. Martin stworzył świat brutalny, pełen politycznych intryg, zdrady i magii powracającej po wiekach uśpienia. Tu nikt nie jest bezpieczny, a granica między dobrem a złem jest cienka jak ostrze miecza.",
+    "stock": 25,
+    "isbn": "978837515020",
+    "category": "Fantastyka"
+  },
+  {
+    "title": "Starcie królów",
+    "author": "George R.R. Martin",
+    "price": 49.90,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780553108033-L.jpg",
+    "description": "Westeros pogrąża się w krwawej wojnie domowej. Pięciu królów rości sobie prawo do korony, a kraina spływa krwią. Podczas gdy na południu trwają walki, na północy budzi się mroczne zagrożenie, o którym wszyscy zdążyli zapomnieć. Epicka opowieść o ambicji, honorze i cenie, jaką trzeba zapłacić za władzę.",
+    "stock": 22,
+    "isbn": "978837515021",
+    "category": "Fantastyka"
+  },
+  {
+    "title": "Nawałnica mieczy",
+    "author": "George R.R. Martin",
+    "price": 55.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780553106633-L.jpg",
+    "description": "Trzeci tom sagi, uważany za najbardziej emocjonujący. Wojna Pięciu Królów zbliża się do punktu krytycznego. Sojusze zostają zerwane w najbardziej brutalny sposób, a losy kluczowych bohaterów zmieniają się na zawsze w trakcie wydarzeń, które przeszły do historii literatury jako Krwawe Gody. Emocje gwarantowane.",
+    "stock": 19,
+    "isbn": "978837515022",
+    "category": "Fantastyka"
+  },
+  {
+    "title": "Uczta dla wron",
+    "author": "George R.R. Martin",
+    "price": 52.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780553801507-L.jpg",
+    "description": "Krajobraz po wielkiej bitwie. Westeros liże rany, ale walka o wpływy wcale nie ustała. Skupiając się na nowych i dotąd pobocznych postaciach, Martin pokazuje, jak wojna wpływa na zwykłych ludzi i jak w chaosie rodzą się nowe potęgi. Religijny fanatyzm i stare urazy zaczynają odgrywać kluczową rolę w walce o przetrwanie.",
+    "stock": 15,
+    "isbn": "978837515023",
+    "category": "Fantastyka"
+  },
+  {
+    "title": "Taniec ze smokami",
+    "author": "George R.R. Martin",
+    "price": 59.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780553801477-L.jpg",
+    "description": "Równolegle do wydarzeń z poprzedniego tomu, śledzimy losy Daenerys Targaryen w odległym Meereen oraz Jona Snowa na Murze. Tyrion Lannister szuka nowej drogi życia, uciekając przed wyrokiem śmierci. Smoki rosną w siłę, a zima, która nadchodzi, obiecuje przynieść ze sobą ostateczne rozliczenie.",
+    "stock": 21,
+    "isbn": "978837515024",
+    "category": "Fantastyka"
+  },
+  {
+    "title": "Stoner",
+    "author": "John Williams",
+    "price": 36.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9781590171998-L.jpg",
+    "description": "Odkryte po latach arcydzieło literatury amerykańskiej. To biografia Williama Stonera, syna farmera, który zostaje profesorem literatury. Jego życie jest z pozoru szare i pełne porażek – nieszczęśliwe małżeństwo, akademickie intrygi, cicha praca. Jednak Williams pisze o nim z taką empatią i pięknem, że czyni ze Stonera bohatera uniwersalnego, ucieleśnienie godności w obliczu trudności losu.",
+    "stock": 30,
+    "isbn": "978837515025",
+    "category": "Współczesne"
+  },
+  {
+    "title": "August",
+    "author": "John Williams",
+    "price": 45.00,
+    "cover": "https://m.media-amazon.com/images/I/A11SgKdgeQL._SL1500_.jpg",
+    "description": "Epicka powieść epistolarna, która rekonstruuje życie Oktawiana Augusta, pierwszego cesarza Rzymu. Przez listy przyjaciół, wrogów i samej córki cesarza, Julii, poznajemy człowieka, który musiał poświęcić swoje życie prywatne i moralność dla dobra imperium. To fascynujący portret władzy i samotności, jaka się z nią wiąże.",
+    "stock": 10,
+    "isbn": "978837515026",
+    "category": "Historyczne"
+  },
+  {
+    "title": "Nędznicy",
+    "author": "Victor Hugo",
+    "price": 69.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780140444308-L.jpg",
+    "description": "Potężna saga o winie, odkupieniu i niesprawiedliwości społecznej w XIX-wiecznej Francji. Jean Valjean, były galernik skazany za kradzież chleba, próbuje zmienić swoje życie, jednak nieustannie ściga go bezwzględny inspektor Javert. Hugo stworzył panoramiczny obraz społeczeństwa, od paryskich rynsztoków po barykady powstania, wplatając w to wątki miłosne i filozoficzne.",
+    "stock": 8,
+    "isbn": "978837515027",
+    "category": "Historyczne"
+  },
+  {
+    "title": "Katedra Marii Panny w Paryżu",
+    "author": "Victor Hugo",
+    "price": 42.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780140443530-L.jpg",
+    "description": "Znana również jako 'Dzwonnik z Notre Dame'. Historia tragicznej miłości Quasimodo, zdeformowanego dzwonnika, do pięknej cyganki Esmeraldy. Powieść jest nie tylko romansem, ale też wielkim hołdem dla architektury gotyckiej i opisem średniowiecznego Paryża, gdzie okrucieństwo miesza się ze szlachetnością, a losy bohaterów są nierozerwalnie związane z kamiennymi murami katedry.",
+    "stock": 13,
+    "isbn": "978837515028",
+    "category": "Historyczne"
+  },
+  {
+    "title": "Pracownicy morza",
+    "author": "Victor Hugo",
+    "price": 44.00,
+    "cover": "https://m.media-amazon.com/images/I/71Vlqf8+-yL._AC_UF1000,1000_QL80_.jpg",
+    "description": "Zmagania człowieka z potęgą oceanu. Gilliat, samotnik z wyspy Guernsey, podejmuje się karkołomnego zadania uratowania silnika z rozbitego statku, by zdobyć rękę ukochanej Deruchette. Hugo z poetyckim rozmachem opisuje siły natury, samotność i determinację, która pozwala człowiekowi przetrwać w najbardziej ekstremalnych warunkach.",
+    "stock": 4,
+    "isbn": "978837515029",
+    "category": "Przygodowe"
+  },
+  {
+    "title": "Ostatni dzień skazańca",
+    "author": "Victor Hugo",
+    "price": 29.00,
+    "cover": "https://m.media-amazon.com/images/I/7116srNTHrL.jpg",
+    "description": "Wstrząsający zapis myśli człowieka oczekującego na egzekucję. Hugo nie ujawnia imienia skazańca ani jego zbrodni, skupiając się całkowicie na psychologicznym aspekcie czekania na śmierć. Książka była przełomowym głosem w debacie nad karą śmierci i do dziś pozostaje jednym z najsilniejszych literackich manifestów humanitaryzmu.",
+    "stock": 6,
+    "isbn": "978837515030",
+    "category": "Polityczne"
+  },
+  {
+    "title": "Nieśmiertelność",
+    "author": "Milan Kundera",
+    "price": 46.00,
+    "cover": "https://m.media-amazon.com/images/I/71LPqVJa0aL._AC_UF894,1000_QL80_.jpg",
+    "description": "Wspaniała powieść o pragnieniu zostania zapamiętanym. Kundera wychodzi od jednego gestu, który zauważa na ulicy, by stworzyć wielowątkową opowieść, w której występują postacie współczesne, ale także Goethe czy Hemingway. Autor bawi się formą, prowadząc nas przez labirynt myśli o miłości, sztuce i tym, co zostaje z nas po śmierci w pamięci innych.",
+    "stock": 8,
+    "isbn": "978837515031",
+    "category": "Współczesne"
+  },
+  {
+    "title": "Hobbit, czyli tam i z powrotem",
+    "author": "J.R.R. Tolkien",
+    "price": 45.00,
+    "cover": "https://m.media-amazon.com/images/I/81uEDUfKBZL._SL1500_.jpg",
+    "description": "Mistrzowskie wprowadzenie do Śródziemia. Bilbo Baggins, spokojny hobbit kochający wygodne życie, zostaje wciągnięty w niebezpieczną wyprawę przez czarodzieja Gandalfa i grupę krasnoludów. Ich celem jest odzyskanie skarbu strzeżonego przez smoka Smauga. Po drodze Bilbo odnajduje w sobie odwagę, o którą nigdy by się nie podejrzewał, oraz tajemniczy złoty pierścień.",
+    "stock": 40,
+    "isbn": "978834415032",
+    "category": "Fantastyka"
+  },
+  {
+    "title": "Władca Pierścieni: Drużyna Pierścienia",
+    "author": "J.R.R. Tolkien",
+    "price": 55.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780618346257-L.jpg",
+    "description": "Początek najważniejszej sagi fantasy w historii literatury. Młody Frodo Baggins dziedziczy Pierścień Jedyny, potężny artefakt, który może przynieść zagładę całemu światu, jeśli wpadnie w ręce Mrocznego Władcy, Saurona. Powstaje Drużyna Pierścienia – przedstawiciele różnych ludów, którzy wyruszają w desperacką misję, by zniszczyć Pierścień w ogniu Góry Przeznaczenia.",
+    "stock": 35,
+    "isbn": "978834415033",
+    "category": "Fantastyka"
+  },
+  {
+    "title": "Wiedźmin: Ostatnie życzenie",
+    "author": "Andrzej Sapkowski",
+    "price": 39.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780316029186-L.jpg",
+    "description": "Pierwszy tom opowiadań o Geralcie z Rivii, płatnym zabójcy potworów. Sapkowski dekonstruuje klasyczne baśnie, nadając im mroczny, cyniczny i bardzo słowiański charakter. Poznajemy historię pierwszej walki Geralta ze strzygą, spotkanie z Jaskrem oraz początki burzliwej relacji z czarodziejką Yennefer. Świat, w którym potwory często okazują się bardziej ludzkie niż sami ludzie.",
+    "stock": 50,
+    "isbn": "978834415034",
+    "category": "Fantastyka"
+  },
+  {
+    "title": "Solaris",
+    "author": "Stanisław Lem",
+    "price": 35.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780156027601-L.jpg",
+    "description": "Najsłynniejsza polska powieść science-fiction. Na stację badawczą krążącą wokół tajemniczej planety Solaris przybywa psycholog Kris Kelvin. Odkrywa, że ocean pokrywający planetę jest żywym, inteligentnym organizmem, który materializuje najgłębsze lęki i wstydliwe wspomnienia załogi. To głęboki traktat o niemożności kontaktu z pozaziemską inteligencją i granicach ludzkiego poznania.",
+    "stock": 20,
+    "isbn": "978834415035",
+    "category": "Science Fiction"
+  },
+  {
+    "title": "Diuna",
+    "author": "Frank Herbert",
+    "price": 59.90,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780441172719-L.jpg",
+    "description": "Epicka opowieść osadzona na pustynnej planecie Arrakis, jedynym źródle Przyprawy – najcenniejszej substancji we wszechświecie. Młody Paul Atryda zostaje rzucony w wir międzyplanetarnych intryg, religijnego fanatyzmu i ekologicznych przemian. Diuna to wielowarstwowe dzieło o władzy, ewolucji człowieka i cenie bycia mesjaszem.",
+    "stock": 25,
+    "isbn": "978834415036",
+    "category": "Science Fiction"
+  },
+  {
+    "title": "Rok 1984",
+    "author": "George Orwell",
+    "price": 32.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg",
+    "description": "Przerażająca wizja państwa totalitarnego, w którym Wielki Brat patrzy, a każda myśl sprzeczna z linią Partii jest zbrodnią. Winston Smith, pracownik Ministerstwa Prawdy, zaczyna kwestionować system i szukać prawdy o przeszłości. Orwell stworzył uniwersalne ostrzeżenie przed inwigilacją, manipulacją językiem i niszczeniem ludzkiej godności.",
+    "stock": 45,
+    "isbn": "978834415037",
+    "category": "Dystopia"
+  },
+  {
+    "title": "Folwark Zwierzęcy",
+    "author": "George Orwell",
+    "price": 28.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780451526342-L.jpg",
+    "description": "Błyskotliwa satyra na rewolucję i mechanizmy władzy. Zwierzęta na farmie pana Jonesa przepędzają ludzi, by stworzyć sprawiedliwe społeczeństwo. Szybko jednak okazuje się, że 'wszystkie zwierzęta są równe, ale niektóre są równiejsze od innych'. Ponadczasowa alegoria korupcji ideałów i narodzin tyranii.",
+    "stock": 30,
+    "isbn": "978834415038",
+    "category": "Klasyki"
+  },
+  {
+    "title": "Zbrodnia i kara",
+    "author": "Fiodor Dostojewski",
+    "price": 42.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780140449136-L.jpg",
+    "description": "Psychologiczny kryminał wszech czasów. Rodion Raskolnikow, ubogi student z Petersburga, uważa, że wybitne jednostki mają prawo do zbrodni w imię wyższych celów. Zabija lichwiarkę, jednak to, co następuje później, nie jest triumfem woli, lecz miażdżącym poczuciem winy i walką sumienia z intelektem. Mistrzowskie studium duszy ludzkiej.",
+    "stock": 15,
+    "isbn": "978834415039",
+    "category": "Psychologiczne"
+  },
+  {
+    "title": "Bracia Karamazow",
+    "author": "Fiodor Dostojewski",
+    "price": 65.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780374528379-L.jpg",
+    "description": "Ostatnia i najobszerniejsza powieść Dostojewskiego. Historia ojcobójstwa służy tu jako pretekst do rozważań nad istnieniem Boga, wolną wolą i naturą zła. Trzej bracia – Dymitr (namiętność), Iwan (intelekt) i Alosza (wiara) – reprezentują różne aspekty rosyjskiej duszy i ludzkiego losu w ogóle.",
+    "stock": 10,
+    "isbn": "978834415040",
+    "category": "Klasyki"
+  },
+  {
+    "title": "Mistrz i Małgorzata",
+    "author": "Michaił Bułhakow",
+    "price": 48.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780679760801-L.jpg",
+    "description": "Do stalinowskiej Moskwy przybywa szatan pod postacią profesora Wolanda wraz ze swoją dziwaczną świtą. Ich wizyta wywołuje chaos i obnaża absurd systemu. Równolegle śledzimy losy Mistrza – pisarza, który spalił rękopis powieści o Poncjuszu Piłacie – oraz jego wiernej kochanki Małgorzaty, która dla ratowania ukochanego jest gotowa na pakt z diabłem.",
+    "stock": 25,
+    "isbn": "978834415041",
+    "category": "Współczesne"
+  },
+  {
+    "title": "Cień wiatru",
+    "author": "Carlos Ruiz Zafón",
+    "price": 49.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780143034902-L.jpg",
+    "description": "Barcelona, lata 40. XX wieku. Młody Daniel Sempere zostaje zaprowadzony przez ojca na Cmentarz Zapomnianych Książek. Wybiera tam wolumin pt. 'Cień wiatru' autorstwa tajemniczego Juliana Caraxa. Próba poznania historii autora wciąga Daniela w mroczną intrygę pełną morderstw, zakazanej miłości i sekretów, które nie powinny ujrzeć światła dziennego.",
+    "stock": 18,
+    "isbn": "978834415042",
+    "category": "Współczesne"
+  },
+  {
+    "title": "Bieguni",
+    "author": "Olga Tokarczuk",
+    "price": 45.00,
+    "cover": "https://ecsmedia.pl/c/bieguni-b-iext190029893.jpg",
+    "description": "Nagrodzona Międzynarodowym Bookerem powieść konstelacyjna polskiej Noblistki. To literacka podróż przez czas i przestrzeń, od siedemnastowiecznych technik konserwacji zwłok po współczesne hale odlotów. Autorka bada fenomen ruchu, podróży i nietrwałości ludzkiego ciała, szukając odpowiedzi na pytanie, co czyni nas ludźmi w ciągle zmieniającym się świecie.",
+    "stock": 22,
+    "isbn": "978834415043",
+    "category": "Współczesne"
+  },
+  {
+    "title": "Ślepnąc od świateł",
+    "author": "Jakub Żulczyk",
+    "price": 44.00,
+    "cover": "https://ecsmedia.pl/c/slepnac-od-swiatel-b-iext196858644.jpg",
+    "description": "Mroczna podróż przez nocną Warszawę. Kuba, perfekcyjnie zorganizowany diler kokainy, planuje urlop. Jednak splot nieszczęśliwych zdarzeń i powrót brutalnego gangstera starej daty krzyżują jego plany. Żulczyk kreśli brutalny obraz stolicy pełnej zepsucia, polityków, celebrytów i ludzi gotowych na wszystko dla kolejnej dawki luksusu i zapomnienia.",
+    "stock": 15,
+    "isbn": "978834415044",
+    "category": "Współczesne"
+  },
+  {
+    "title": "Morderstwo w Orient Expressie",
+    "author": "Agatha Christie",
+    "price": 34.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780007119318-L.jpg",
+    "description": "Najsłynniejsza zagadka Herkulesa Poirota. Słynny detektyw podróżuje luksusowym pociągiem, który utyka w zaspie śnieżnej. W nocy dochodzi do brutalnego morderstwa amerykańskiego milionera. Poirot odkrywa, że każdy z pasażerów miał powód, by zabić, a sprawa ma korzenie w tragicznej zbrodni sprzed lat. Klasyka kryminału z najbardziej zaskakującym zakończeniem.",
+    "stock": 30,
+    "isbn": "978834415045",
+    "category": "Kryminał"
+  },
+  {
+    "title": "To",
+    "author": "Stephen King",
+    "price": 59.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9781501142970-L.jpg",
+    "description": "Monumentalny horror o grupie dzieciaków z miasteczka Derry, które muszą zmierzyć się z pradawnym złem przybierającym postać klauna Pennywise'a. Po 27 latach 'Klub Frajerów' musi powrócić do domu, by dopełnić krwawej obietnicy. To nie tylko przerażająca opowieść, ale też piękna książka o dorastaniu, potędze przyjaźni i strachu, który nigdy nas nie opuszcza.",
+    "stock": 12,
+    "isbn": "978834415046",
+    "category": "Horror"
+  },
+  {
+    "title": "Lśnienie",
+    "author": "Stephen King",
+    "price": 42.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780345806789-L.jpg",
+    "description": "Jack Torrance, początkujący pisarz i alkoholik, obejmuje posadę zimowego dozorcy w odizolowanym od świata hotelu Overlook. Towarzyszy mu żona i synek Danny, który posiada dar 'lśnienia' – widzenia duchów przeszłości. Hotel zaczyna oddziaływać na psychikę Jacka, powoli spychając go w otchłań szaleństwa. Powieść o lęku, izolacji i upadku człowieka.",
+    "stock": 14,
+    "isbn": "978834415047",
+    "category": "Horror"
+  },
+  {
+    "title": "Wojna Makowa",
+    "author": "Rebecca F. Kuang",
+    "price": 45.00,
+    "cover": "https://s.lubimyczytac.pl/upload/books/4909000/4909870/783951-352x500.jpg",
+    "description": "Kiedy jesteś sierotą wojenną świat ma dla ciebie głównie pogardę, odrzucenie, brutalność i ból. Czasem, jeśli akurat masz szczęście, obojętność. Jeśli natomiast do tego jesteś dziewczynką, szczęście ma twoja przybrana rodzina. Zawsze może ubić interes i sprzedać cię na żonę jakiemuś zamożnemu staruchowi. Rin doświadczyła tego wszystkiego. Jest nikim, jej życie nie ma dla nikogo żadnego znaczenia, nikogo też nie obchodzi jej los. Jeśli chce wydostać się z rynsztoka, w którym się wychowała, ma tylko dwie drogi. Pierwsza wiedzie przez łóżko obmierzłego starca. Druga, przez bramę Akademii Sinegradzkiej – elitarnej szkoły wojskowej. Aby podążyć tą drugą drogą, Rin zrobi wszystko, co tylko leży w ludzkiej mocy. A nawet więcej. To nie jest historia o potędze nauki, sile przyjaźni czy starciach wielkiej magii. To jest historia o kołach czasu, które nieustępliwie i bezlitośnie mielą ludzkie losy. I o dziewczynie, która zniszczyła cały mechanizm. Kamieniem, bo na miecz była za biedna.",
+    "stock": 19,
+    "isbn": "978834415048",
+    "category": "Fantastyka"
+  },
+  {
+    "title": "Proces",
+    "author": "Franz Kafka",
+    "price": 32.00,
+    "cover": "https://m.media-amazon.com/images/I/91kVls2-3bL.jpg",
+    "description": "Józef K. zostaje aresztowany pewnego ranka, choć nie popełnił żadnego przestępstwa. Próbuje walczyć z bezduszną biurokracją i nieuchwytnym Sądem, wpadając w coraz większy labirynt absurdu i poczucia winy. Powieść, która stała się synonimem 'sytuacji kafkowskiej', obrazująca bezsilność jednostki wobec niezrozumiałej potęgi systemu.",
+    "stock": 18,
+    "isbn": "978834415049",
+    "category": "Klasyki"
+  },
+  {
+    "title": "Wielki Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "price": 36.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg",
+    "description": "Ameryka lat 20., czasy jazzu, prohibicji i wielkich fortun. Tajemniczy milioner Jay Gatsby wydaje wystawne przyjęcia, by przyciągnąć uwagę swojej dawnej miłości, Daisy. To gorzka opowieść o upadku amerykańskiego snu, o tym, że przeszłości nie da się powtórzyć, a pieniądze nie dają wstępu do świata, do którego tak bardzo pragniemy należeć.",
+    "stock": 20,
+    "isbn": "978834415050",
+    "category": "Klasyki"
+  },
+  {
+    "title": "Imię róży",
+    "author": "Umberto Eco",
+    "price": 54.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780156001311-L.jpg",
+    "description": "Genialne połączenie kryminału historycznego, traktatu filozoficznego i semiotyki. Rok 1327, do opactwa benedyktynów w północnych Włoszech przybywa franciszkanin Wilhelm z Baskerville, by zbadać sprawę serii tajemniczych morderstw wśród mnichów. Klucz do zagadki kryje się w pilnie strzeżonej bibliotece-labiryncie.",
+    "stock": 12,
+    "isbn": "978834415051",
+    "category": "Historyczne"
+  },
+  {
+    "title": "Sto lat samotności",
+    "author": "Gabriel García Márquez",
+    "price": 49.00,
+    "cover": "https://covers.openlibrary.org/b/isbn/9780060883287-L.jpg",
+    "description": "Arcydzieło realizmu magicznego. Saga rodu Buendiów w mitycznej wiosce Macondo. Historia siedmiu pokoleń, w których czas się zapętla, cuda są codziennością, a tragizm miesza się z humorem. Powieść o samotności, pożądaniu i nieuchronnym losie, który ciąży nad rodziną skazaną na zapomnienie.",
+    "stock": 15,
+    "isbn": "978834415052",
+    "category": "Klasyki"
+  }
+]

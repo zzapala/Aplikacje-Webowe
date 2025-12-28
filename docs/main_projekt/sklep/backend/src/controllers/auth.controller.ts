@@ -5,21 +5,27 @@ import jwt from 'jsonwebtoken'
 
 
 export const register = async (req: Request, res: Response) => {
-    const {email, password} = req.body
+    const {email, login, password} = req.body
 
-    if (!email || !password) {
-        return res.status(400).json({message: "email i hasło są wymagane"})
+    if (!email || !login || !password) {
+        return res.status(400).json({message: "email, login i hasło są wymagane"})
     }
 
-    const existing = await User.findOne({ where: {email}})
-    if (existing) {
+    const existingEmail = await User.findOne({ where: {email}})
+    if (existingEmail) {
         return res.status(400).json({message: "uzytkownik z podanym mailem juz istnieje"})
+    }
+
+    const existingLogin = await User.findOne({ where: {login}})
+    if (existingLogin) {
+        return res.status(400).json({message: "uzytkownik z podanym loginem juz istnieje"})
     }
 
     const hashed = await bcrypt.hash(password,10)
 
     const user = await User.create({
         email,
+        login,
         password: hashed,
         role: "user"
     })

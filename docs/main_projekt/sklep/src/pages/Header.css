@@ -11,7 +11,7 @@
   
     height: 64px;
     padding: 10px 20px;
-    background: #F6F4F1;
+    background: var(--bg-section);
     border-bottom: 1px solid #ddd;
   
     transition:
@@ -25,7 +25,10 @@
   
 
 .logo {
-    height: 120px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 100px;
 }
 
 .logo-pic {

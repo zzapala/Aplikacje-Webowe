@@ -4,11 +4,13 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
-  
   border-right: 1px solid var(--accent-muted);
   border-left: 1px solid var(--accent-muted);
-
+  height: 400px;
   margin-left: -1px;
+  text-align:left;
+
+  transition: 0.5s;
   
 }
 
@@ -23,21 +25,22 @@
 
 
 .book-title {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 4px;
 }
 
 .book-author {
-  font-size: 12px;
+  font-size: 13px;
   color: #666;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
 }
 
 .book-price {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   margin-top: auto;
+  
 
 }
 
@@ -45,42 +48,79 @@
 .book-link {
   margin-top: 12px;
   display: flex;
+  align-content: center;
+  justify-content: center;;
   flex-direction: column;
   gap: 6px;
   text-align: center;
 }
 
 .book-link a {
-  padding: 8px;
+  padding: 8px 19px;
   font-size: 13px;
   border-radius: 4px;
-}
-
-
-#book-details a {
-  background-color: var(--accent-muted);
-  color: var(--accent-muted-hoover);
-  transition: 0.5s;
-}
-
-#book-details a:hover {
-  background: var(--accent-muted-hover);
-  transition: 0.5s;
+  display: flex;          /* ustawia elementy w jednej linii */
+  align-items: center;    /* wyrównuje pionowo w osi poziomej */
+  justify-content: center;/* wyśrodkowuje całość */
 }
 
 
 
 
 
-#book-cart a {
-  background: var(--accent);
+.add-to-cart-button {
+  gap: 6px;
+  text-align: center;
+  background-color: var(--accent);
+  font-size: 13px;
+  border-radius: 10px;
   color: var(--text-buttons);
   transition: 0.5s;
 }
 
-#book-cart a:hover {
+.add-to-cart-button a {
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.add-to-cart-button:hover{
   background: var(--accent-hover);
   transition: 0.5s;
+}
+
+.add-to-fav-button {
+  gap: 10px;
+  text-align: center;
+  background-color: var(--accent-middle);
+  font-size: 13px;
+  border-radius: 10px;
+  color: var(--accent);
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-fav-button a {
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.add-to-fav-button:hover{
+  background: var(--accent-muted);
+  transition: 0.5s;
+}
+
+
+.book-card__like {
+  height: 15px !important;
+  margin: auto 0 !important;
+}
+
+.book-card:hover {
+  box-shadow: 0px 0px 18px 5px rgba(82, 68, 70, 0.205);
+  transition: 0.5s;
+  transform: scale(1.01); 
 }
 
 

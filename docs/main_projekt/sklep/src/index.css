@@ -1,10 +1,12 @@
 :root {
-  --bg-main: #fafafa;      /* tło strony */
-  --bg-section: #f4f2f2;  /* sekcje / listy */
+  --bg-main: #faf7f7;      /* tło strony */
+  --bg-section: #f1eded;  /* sekcje / listy */
   --accent: #524446;     /* przyciski główne */
   --accent-hover: #65585a;
   --accent-muted: #e7e3de;  /* przyciski drugorzędne */
-  --accent-muted-hover: #eae8e3;
+  --accent-muted-hover: #d4d1c8;
+  --accent-middle: #E0DADA;
+  --accent-middle-hover: #C1BEBE;
   --text-main: #2b2b2b;
   --text-buttons: #fafafa; /* tekst na przyciskach */
   --text-muted: #4a4a4a; /* tekst drugorzędny */
@@ -24,10 +26,10 @@ main {
   width: 100%;
 
   color-scheme: light dark;
-  color: #2B2B2B;
-  background-color: #fafafa;;
+  color: var(--text-main);
+  background-color: var(--bg-main);;
 
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'DM Sans';
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

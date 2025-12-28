@@ -8,16 +8,18 @@ import type { SortOption } from "../pages/Produkty"
 interface BooksProps {
   selectedCategory: string
   selectedSort: SortOption
+  searchQuery: string;
 }
 
 
-export function Books({selectedCategory, selectedSort}: BooksProps) {
+export function Books({selectedCategory, selectedSort, searchQuery = ""}: BooksProps) {
   const [books, setBooks] = useState<BookType[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
+  // pobieram dane
   useEffect(() => {
-    fetch("/data/books.json")
+    fetch("http://localhost:3000/api/books")
       .then(res => {
         if (!res.ok) throw new Error("Błąd ładowania danych")
         return res.json()
@@ -34,10 +36,20 @@ export function Books({selectedCategory, selectedSort}: BooksProps) {
 
   
   const booksToDisplay = useMemo(() => {
-    const filteredBooks = books.filter(book => {
+    let filteredBooks = books.filter(book => {
       if (selectedCategory === "All") return true
       return book.category === selectedCategory
     })
+
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase().trim()
+      filteredBooks = filteredBooks.filter(book => 
+        book.title.toLowerCase().includes(query) ||
+        book.author.toLowerCase().includes(query) ||
+        book.description?.toLowerCase().includes(query) ||
+        book.category?.toLowerCase().includes(query)
+      )
+    }
 
     switch (selectedSort) {
       case "price-asc":
@@ -59,8 +71,10 @@ export function Books({selectedCategory, selectedSort}: BooksProps) {
       default:
         return filteredBooks // Domyślna kolejność
     }
-  }, [books, selectedCategory, selectedSort])
+  }, [books, selectedCategory, selectedSort, searchQuery])
 
+
+  
 
 
   if (loading) return <p className="loading">Ładowanie książek…</p>

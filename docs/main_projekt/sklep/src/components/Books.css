@@ -15,4 +15,37 @@
 
   
 
- 
+ /* src/components/Books.css - dodaj */
+.search-info-banner {
+  background: linear-gradient(135deg, #4a90e2, #63b3ed);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+}
+
+.search-info-banner h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.search-info-banner p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  color: #6c757d;
+  margin: 2rem 0;
+}
+
+.no-results p {
+  margin: 0;
+  font-size: 1.1rem;
+}

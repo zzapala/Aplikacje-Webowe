@@ -1,0 +1,39 @@
+.profile-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.profile-panel_personal-info {
+    width: 25%;
+    height: 500px;
+    background-color: var(--bg-section);
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.profile-panel_orders-data {
+    width: 60%;
+    height: 500px;
+    background-color: var(--bg-section);
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.user-pic {
+    width: 200px;
+    text-align: center;
+}
+
+.user-data {
+    text-align: center;
+}

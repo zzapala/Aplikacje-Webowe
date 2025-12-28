@@ -4,13 +4,14 @@
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 24px;
-    border: 1px solid var(--accent-muted-hover)
+    border: 1px solid var(--accent-muted-hover);
+    text-align: center;
   }
   
   .filter-column__title {
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 20px;
     color: var(--text-main);
   }
   
@@ -32,3 +33,19 @@
     font-size: 1.1rem;
     color: var(--text-muted);
   }
+
+
+
+  .filter-reset {
+    margin-top: 12px;
+    gap: 6px;
+    text-align: center;
+    background-color: var(--accent);
+    font-size: 13px;
+    border-radius: 4px;
+  }
+  
+  .filter-reset a {
+    padding: 8px;
+  }
+  

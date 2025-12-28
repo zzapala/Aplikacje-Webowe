@@ -10,25 +10,23 @@ interface JwtPayload {
 }
 
 export const authenticateJWT = (req: Request, res: Response, next: NextFunction) => {
-  const authHeader = req.headers.authorization
+  const authHeader = req.headers.authorization;
 
   if (!authHeader || !authHeader.startsWith('Bearer ')) {
-    return res.status(401).json({ message: 'Missing or invalid Authorization header' })
+    return res.status(401).json({ message: 'Missing or invalid Authorization header' });
   }
 
-  const token = authHeader.split(' ')[1]
-
-  const secret = process.env.JWT_SECRET
+  const token = authHeader.split(' ')[1];
+  const secret = process.env.JWT_SECRET;
   if (!secret) {
-    return res.status(500).json({ message: 'JWT secret not configured' })
+    return res.status(500).json({ message: 'JWT secret not configured' });
   }
 
   try {
-    const decoded = jwt.verify(token, secret) as JwtPayload
-    // Przechowujemy dane użytkownika w req, żeby inne middleware lub kontrolery mogły z nich korzystać
-    ;(req as any).user = decoded
-    next()
+    const decoded = jwt.verify(token, secret) as JwtPayload;
+    req.user = decoded;  // przypisanie tutaj
+    next();
   } catch (err) {
-    return res.status(401).json({ message: 'Invalid or expired token' })
+    return res.status(401).json({ message: 'Invalid or expired token' });
   }
-}
+};

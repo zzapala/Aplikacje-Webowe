@@ -4,6 +4,7 @@ import { sequelize } from '../config/database'
 export class User extends Model {
   declare id: number
   declare email: string
+  declare login: string
   declare password: string
   declare role: string
 }
@@ -16,6 +17,11 @@ User.init(
       primaryKey: true
     },
     email: {
+      type: DataTypes.STRING,
+      unique: true,
+      allowNull: false
+    },
+    login: {
       type: DataTypes.STRING,
       unique: true,
       allowNull: false

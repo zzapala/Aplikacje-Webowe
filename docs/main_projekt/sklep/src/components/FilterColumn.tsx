@@ -8,13 +8,15 @@ interface FilterColumnProps {
   selectedCategory: string
   selectedSort: SortOption
   handleSortChange: (sort: SortOption) => void
+  clearFilters: () => void 
 }
 
 function FilterColumn({ 
   handleFilter, 
   selectedCategory, 
   selectedSort, 
-  handleSortChange 
+  handleSortChange,
+  clearFilters
 }: FilterColumnProps) {
   
   const handleSortSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -59,11 +61,7 @@ function FilterColumn({
 
       <button 
         className="filter-reset"
-        onClick={() => {
-          // Możesz dodać logikę resetowania
-          // Na razie tylko log
-          console.log("Resetuj filtry")
-        }}
+        onClick={clearFilters}
       >
         Wyczyść wszystkie filtry
       </button>

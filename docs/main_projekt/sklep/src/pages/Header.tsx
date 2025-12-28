@@ -4,21 +4,32 @@ import Navlist from "../components/Navlist";
 import Searchbar from "../components/Searchbar";
 import IconButton from "../components/IconButton";
 import { Link } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
+
 
 
 function Header() {
+    const { isLogged } = useAuth();
+    const title = isLogged ? "Moje konto" : "Zaloguj się"
 
     return (
         <>
       <header className="header">
       <div className="logo-pic">
-      <Link to="/"><img src="/logo6.png" alt="On Books" className="logo" /></Link>
+      <Link to="/"><img src="/poslowie.png" alt="Posłowie" className="logo" /></Link>
       </div> 
-        <Searchbar />
+      <Searchbar />
+
         <div className="header-icons">
-            <IconButton src="/heart.png" alt="Zapisane" />
-            <IconButton src="/koszyk.png" alt="Mój koszyk" />
-            <IconButton src="/user.png" alt="Moje konto" />
+            <Link to={isLogged ? "/wishlist" : "/login"}>
+              <IconButton src="/heart.png" alt="Zapisane" />
+            </Link>
+            <Link to={isLogged ? "/cart" : "/login"}>
+              <IconButton src="/koszyk.png" alt="Mój koszyk" />
+            </Link>
+            <Link to={isLogged ? "/account" : "/login"}>
+              <IconButton src="/user.png" alt={title} />
+            </Link>
         </div>
       </header>
 

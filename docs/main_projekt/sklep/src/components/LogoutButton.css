@@ -1,0 +1,19 @@
+.logout {
+    gap: 6px;
+    text-align: center;
+    background-color: var(--accent);
+    font-size: 16px;
+    border-radius: 10px;
+    color: var(--text-buttons);
+    transition: 0.5s;
+  }
+  
+.logout a {
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+.logout:hover{
+    background: var(--accent-hover);
+    transition: 0.5s;
+}
