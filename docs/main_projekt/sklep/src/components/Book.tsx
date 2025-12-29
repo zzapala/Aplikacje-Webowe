@@ -3,10 +3,11 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './Book.css';
 import type { Favourite } from '../types/Favourite';
+import { isTokenValid } from '../utils/auth';
 
 function BookComponent(param: { book: Book }) {
   const { book } = param;
-  const isLoggedIn = !!localStorage.getItem('token');
+  const isLoggedIn = isTokenValid();
   const navigate = useNavigate();
 
   const [isFavourite, setIsFavourite] = useState(false);
@@ -43,7 +44,7 @@ function BookComponent(param: { book: Book }) {
       return;
     }
     try {
-      const response = await fetch('/api/cart/items', {
+      const response = await fetch('http://localhost:3000/api/cart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -52,9 +53,7 @@ function BookComponent(param: { book: Book }) {
         body: JSON.stringify({ bookId: book.id, quantity: 1 }),
       });
       if (!response.ok) throw new Error('Błąd podczas dodawania do koszyka');
-      alert('Dodano do koszyka!');
     } catch (error) {
-      alert('Coś poszło nie tak...');
       console.error(error);
     }
   };
@@ -89,7 +88,6 @@ function BookComponent(param: { book: Book }) {
       }
     } catch (err) {
       console.error(err);
-      alert('Coś poszło nie tak...');
     }
   };
 

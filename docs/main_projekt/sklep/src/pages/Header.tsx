@@ -4,19 +4,24 @@ import Navlist from "../components/Navlist";
 import Searchbar from "../components/Searchbar";
 import IconButton from "../components/IconButton";
 import { Link } from "react-router-dom";
-import useAuth from "../hooks/useAuth";
+import { useAuth } from "../hooks/useAuth";
 
 
 
 function Header() {
-    const { isLogged } = useAuth();
+    const { user, loading } = useAuth();
+
+    if (loading) return null; // albo spinner
+
+    const isLogged = !!user;
+
     const title = isLogged ? "Moje konto" : "Zaloguj się"
 
     return (
         <>
       <header className="header">
       <div className="logo-pic">
-      <Link to="/"><img src="/poslowie.png" alt="Posłowie" className="logo" /></Link>
+      <Link to="/products"><img src="/poslowie.png" alt="Posłowie" className="logo" /></Link>
       </div> 
       <Searchbar />
 

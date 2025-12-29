@@ -3,12 +3,13 @@ import { useEffect, useState } from "react";
 import type { Book } from "../types/Book";
 import './PodstronaProduktu.css'
 import type { Favourite } from '../types/Favourite';
+import { isTokenValid } from "../utils/auth";
 
 const BookDetailsPage = () => {
   const { id } = useParams(); // pobiera wartość z URL
   const [book, setBook] = useState<Book |null >(null);
-  const isLoggedIn = !!localStorage.getItem("token")
-  const navigate = useNavigate()
+  const isLoggedIn = isTokenValid();
+  const navigate = useNavigate();
 
   const [isFavourite, setIsFavourite] = useState(false);
 
@@ -49,6 +50,26 @@ const BookDetailsPage = () => {
 
   if (!book) return <div>Ładowanie...</div>;
 
+  const handleAddToCart = async () => {
+    if (!isLoggedIn) {
+      navigate('/login');
+      return;
+    }
+    try {
+      const response = await fetch('http://localhost:3000/api/cart', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${localStorage.getItem('token')}`,
+        },
+        body: JSON.stringify({ bookId: book.id, quantity: 1 }),
+      });
+      if (!response.ok) throw new Error('Błąd podczas dodawania do koszyka');
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   const handleToggleFavourite = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     if (!isLoggedIn) {
@@ -79,7 +100,6 @@ const BookDetailsPage = () => {
       }
     } catch (err) {
       console.error(err);
-      alert('Coś poszło nie tak...');
     }
   };
 
@@ -93,7 +113,7 @@ const BookDetailsPage = () => {
                   <div className="book-detail__book-author">{book.author}</div>
                 </div>
                 <div className="book-detail__book-price">{book.price.toFixed(2)} zł</div>
-                <button id="add-cart" className="book-details__button">Dodaj do koszyka</button>
+                <button onClick={handleAddToCart} id="add-cart" className="book-details__button">Dodaj do koszyka</button>
                 <button onClick={handleToggleFavourite} className="add-to-fav-button">
                     <img
                         src='/heart.png'

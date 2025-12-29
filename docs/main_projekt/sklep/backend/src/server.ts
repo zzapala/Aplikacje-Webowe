@@ -8,7 +8,7 @@ import { seedBooks } from './seed/seedBooks'
 import dotenv from "dotenv"
 
 const start = async () => {
-  await sequelize.sync()
+  await sequelize.sync({ alter: true })
   console.log('Database synced')
   dotenv.config()
 

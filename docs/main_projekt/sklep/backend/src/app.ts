@@ -5,6 +5,8 @@ import dotenv from 'dotenv'
 import authRoutes from './routes/auth.routes'
 import bookRoutes from './routes/book.routes'
 import favouriteRoutes from './routes/favourite.routes'
+import cartRoutes from './routes/cart.routes'
+import orderRoutes from './routes/orders.routes'
 
 dotenv.config()
 
@@ -16,6 +18,8 @@ app.use(express.json())
 app.use('/auth', authRoutes)
 app.use('/api/books', bookRoutes)
 app.use('/api/favourites', favouriteRoutes)
+app.use('/api/cart', cartRoutes)
+app.use('/api/orders', orderRoutes)
 
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok' })

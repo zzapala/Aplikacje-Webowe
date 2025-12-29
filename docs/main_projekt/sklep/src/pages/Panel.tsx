@@ -1,14 +1,19 @@
 import LogoutButton from "../components/LogoutButton"
 import "./Panel.css"
+import { useAuth } from "../hooks/useAuth";
+
 
 function Panel() {
+    const { user, loading } = useAuth();
 
+    if (loading) return <p>Ładowanie danych użytkownika...</p>;
+    if (!user) return <p>Nie jesteś zalogowany</p>;
     return (
         <div className="profile-panel">
             <div className="profile-panel_personal-info">
                 <div className="user-data">
-                    <img src="/user.png" className="user-pic"></img>
-                    <h2 className="user-name">Witaj, Chuj</h2>
+                    <img src="/user.png" className="u4ser-pic"></img>
+                    <h2 className="user-name">Witaj, {user.login}</h2>
                 </div>
                 <div className="logout"><LogoutButton /></div>
             </div>

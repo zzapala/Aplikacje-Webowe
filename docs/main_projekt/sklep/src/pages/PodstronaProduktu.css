@@ -70,6 +70,7 @@
 
 .book-detail__book-title {
     font-size: 25px;
+    font-weight: 600;
 }
 
 .book-detail__book-author{
@@ -78,4 +79,5 @@
 
 .book-detail__book-price {
     font-size: 40px;
+    font-weight: 800;
 }

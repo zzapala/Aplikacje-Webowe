@@ -1,41 +1,63 @@
-import React, { createContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { createContext, useEffect, useState } from "react";
+import type { ReactNode } from "react";
+
+import type { User } from "../types/User";
+import { fetchMe } from "../utils/auth";
 
 export interface AuthContextType {
-  isLogged: boolean;
-  token: string | null;
-  login: (token: string) => void;
+  user: User | null;
+  loading: boolean;
   logout: () => void;
+  login: (token: string) => void;
 }
 
-const AuthContext = createContext<AuthContextType>({
-  isLogged: false,
-  token: null,
-  login: () => {},
-  logout: () => {}
-});
+// Tworzymy kontekst
+// eslint-disable-next-line react-refresh/only-export-components
+export const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
-  const navigate = useNavigate();
-  const [token, setToken] = useState<string | null>(() => localStorage.getItem("token"));
-  const isLogged = !!token;
+// Provider (komponent React)
+export const AuthProvider = ({ children }: { children: ReactNode }) => {
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(true);
 
-  const login = (newToken: string) => {
-    localStorage.setItem("token", newToken);
-    setToken(newToken);
+  // Funkcja logowania
+  const login = async (token: string) => {
+    // zapis tokenu
+    localStorage.setItem("token", token);
+    try {
+      const u = await fetchMe(); // pobiera dane użytkownika z tokenem
+      setUser(u);
+    } catch (err) {
+      console.error("Nie udało się pobrać danych użytkownika:", err);
+      setUser(null);
+    }
   };
 
+  // Funkcja wylogowania
   const logout = () => {
     localStorage.removeItem("token");
-    setToken(null);
-    navigate("/login");
+    setUser(null);
   };
 
+  // Przy ładowaniu strony sprawdzamy token
+  useEffect(() => {
+    const loadUser = async () => {
+      try {
+        const u = await fetchMe();
+        setUser(u);
+      } catch (err) {
+        console.error("Nie udało się pobrać danych użytkownika:", err);
+        setUser(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadUser();
+  }, []);
+
   return (
-    <AuthContext.Provider value={{ isLogged, token, login, logout }}>
+    <AuthContext.Provider value={{ user, loading, logout, login }}>
       {children}
     </AuthContext.Provider>
   );
 };
-
-export default AuthContext;
