@@ -1,10 +1,10 @@
+
+import './models' 
 import { app } from './app'
 import { sequelize } from './config/database'
 import './models/User'
 import './models/Book'
 import { seedBooks } from './seed/seedBooks'
-import Book from './models/Book'
-import "./models/CartItem"
 import dotenv from "dotenv"
 
 const start = async () => {

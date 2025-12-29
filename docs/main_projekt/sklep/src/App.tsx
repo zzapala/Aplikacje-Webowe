@@ -7,6 +7,7 @@ import Header from "./pages/Header"
 import Produkty from "./pages/Produkty"
 import BookDetailsPage from "./pages/PodstronaProduktu"
 import Panel from "./pages/Panel"
+import Ulubione from "./pages/Ulubione"
 
 import './App.css'
 import Rejestracja from "./pages/Rejestracja"
@@ -27,6 +28,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Rejestracja />} />
           <Route path="/account" element={<Panel />} />
+          <Route path="/wishlist" element={<Ulubione />} />
         </Routes>
       </main>
       </AuthProvider>

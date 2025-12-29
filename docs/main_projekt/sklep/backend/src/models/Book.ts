@@ -1,5 +1,7 @@
 import { DataTypes, Model } from 'sequelize'
 import { sequelize } from '../config/database'
+import {User} from "./User"
+import {Favourite} from "./Favourite"
 
 export class Book extends Model {
     declare id: string

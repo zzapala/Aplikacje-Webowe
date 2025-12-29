@@ -1,11 +1,17 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import type { Book } from "../types/Book";
 import './PodstronaProduktu.css'
+import type { Favourite } from '../types/Favourite';
 
 const BookDetailsPage = () => {
   const { id } = useParams(); // pobiera wartość z URL
   const [book, setBook] = useState<Book |null >(null);
+  const isLoggedIn = !!localStorage.getItem("token")
+  const navigate = useNavigate()
+
+  const [isFavourite, setIsFavourite] = useState(false);
+
 
   useEffect(() => {
     fetch(`http://localhost:3000/api/books/${id}`)
@@ -14,7 +20,68 @@ const BookDetailsPage = () => {
       .catch(err => console.log(err));
   }, [id]);
 
+  useEffect(() => {
+  const checkFavourite = async () => {
+    if (!isLoggedIn) return;
+    if (!book) return; // <-- dodajemy tę linię
+    const token = localStorage.getItem('token');
+    if (!token) return;
+
+    try {
+      const res = await fetch('http://localhost:3000/api/favourites', {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (!res.ok) {
+        console.error('Nie udało się pobrać ulubionych');
+        return;
+      }
+
+      const data: Favourite[] = await res.json();
+      setIsFavourite(data.some((f: Favourite) => f.Book.id === book.id));
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  checkFavourite();
+}, [book, isLoggedIn]); // <-- w dependency array dajemy book zamiast book.id
+
+
   if (!book) return <div>Ładowanie...</div>;
+
+  const handleToggleFavourite = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    if (!isLoggedIn) {
+      navigate('/login');
+      return;
+    }
+
+    const token = localStorage.getItem('token');
+    try {
+      if (isFavourite) {
+        const res = await fetch(`http://localhost:3000/api/favourites/${book.id}`, {
+          method: 'DELETE',
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        if (!res.ok) throw new Error('Nie udało się usunąć z ulubionych');
+        setIsFavourite(false);
+      } else {
+        const res = await fetch('http://localhost:3000/api/favourites', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ bookId: book.id }),
+        });
+        if (!res.ok) throw new Error('Nie udało się dodać do ulubionych');
+        setIsFavourite(true);
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Coś poszło nie tak...');
+    }
+  };
 
   return (
     <div className="book-details__container">
@@ -27,8 +94,14 @@ const BookDetailsPage = () => {
                 </div>
                 <div className="book-detail__book-price">{book.price.toFixed(2)} zł</div>
                 <button id="add-cart" className="book-details__button">Dodaj do koszyka</button>
-                <button id="add-fav" className="book-details__button">Dodaj do ulubionych</button>
-             </div>
+                <button onClick={handleToggleFavourite} className="add-to-fav-button">
+                    <img
+                        src='/heart.png'
+                        className="book-card__like"
+                    />
+                    {isFavourite ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}
+                </button>
+            </div>
         </div>
         <div className = "book-details__long-paragraph">
             <p>{book.description}</p>

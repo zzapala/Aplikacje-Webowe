@@ -44,6 +44,12 @@
 
 }
 
+.book-card img {
+  display: block;    /* aby margin działał poprawnie */
+  margin: 0 auto;    /* poziome wyśrodkowanie */
+  margin-bottom: 10px;
+}
+
 
 .book-link {
   margin-top: 12px;
@@ -118,7 +124,7 @@
 }
 
 .book-card:hover {
-  box-shadow: 0px 0px 18px 5px rgba(82, 68, 70, 0.205);
+  box-shadow: 0px 0px 18px 5px rgba(82, 68, 70, 0.296);
   transition: 0.5s;
   transform: scale(1.01); 
 }

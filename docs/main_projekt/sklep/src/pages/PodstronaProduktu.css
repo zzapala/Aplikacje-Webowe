@@ -65,7 +65,7 @@
     color: var(--accent);
 }
 #add-fav:hover {
-    background-color: var(--accent-middle-hover);
+    background-color: var(--accent-muted);
 }
 
 .book-detail__book-title {
