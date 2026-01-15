@@ -19,7 +19,6 @@
 .search-button {
     padding: 8px 16px;
     margin-left: 0px;
-    margin-right: 20px;
     background-color: var(--accent);
     border: none;
     border-radius: 4px;
@@ -32,4 +31,28 @@ transition: 0.5s;
 .search-button:hover {
     background-color: var(--accent-hover);
 transition: 0.5s;
+}
+
+
+@media (max-width: 1100px) {
+    .search-input {
+        width: 75%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-button {
+        width: 15%;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+}
+
+
+
+@media (min-width: 1101px) and (max-width: 1440px) {
+    .search-input {
+        width: 540px;
+        transition: width 0.3s ease;
+    }
 }

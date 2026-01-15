@@ -60,6 +60,26 @@ h1 {
   line-height: 1.1;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-section);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-middle-hover);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-middle);
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

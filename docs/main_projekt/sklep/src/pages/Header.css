@@ -2,7 +2,6 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    margin-left: -50px;
     width: 100%;
   
     display: flex;
@@ -10,9 +9,11 @@
     justify-content: space-between;
   
     height: 64px;
-    padding: 10px 20px;
+    padding: 40px 10px;
     background: var(--bg-section);
     border-bottom: 1px solid #ddd;
+
+    box-sizing: border-box;
   
     transition:
       transform 0.25s ease,
@@ -25,7 +26,6 @@
   
 
 .logo {
-    margin-left: 40px;
     margin-right: 20px;
     margin-top: 10px;
     height: 100px;
@@ -45,4 +45,94 @@
 
 .user-button {
     width: 20px;
+}
+
+
+
+@media (max-width: 1100px) {
+  .header {
+      margin-left: 0;           
+      height: auto;             
+      flex-direction: column;   
+      padding: 15px;
+      gap: 15px;                
+      align-items: stretch;     
+  }
+
+  .logo-pic {
+      display: flex;
+      justify-content: center;  
+  }
+
+  .logo {
+      margin: 0;               
+      height: 50px;           
+  }
+
+  .header :any-link + div,      
+  .header > *:nth-child(2) {
+      width: 100%;
+      order: 3;                 
+  }
+
+  .header-icons {
+      margin-left: 0;
+      justify-content: center; 
+      gap: 25px;                
+      order: 2;
+  }
+
+  .user-button {
+      width: 25px;             
+  }
+}
+
+@media (max-width: 768px) {
+  nav, .navlist-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 10px 5px;
+      display: flex;
+      -webkit-overflow-scrolling: touch;
+  }
+}
+
+
+
+@media (min-width: 1101px) and (max-width: 1300px) {
+
+  .logo {             
+    height: 50px;           
+  }
+}
+
+
+
+@media (min-width: 1101px) and (max-width: 1440px) {
+
+
+
+  .header-icons {
+      margin-left: 0;
+      justify-content: center; 
+      gap: 10px;                
+      order: 2;
+      font-size: 13px;
+  }
+
+  .header-icons a {
+    white-space: nowrap; 
+}
+
+.header-icons span {
+    font-size: 14px;
+    margin-top: 4px;
+    white-space: nowrap; 
+}
+
+  
+
+  .user-button {
+      width: 25px;             
+  }
 }
