@@ -40,17 +40,17 @@ export const login = async (req: Request, res: Response) => {
     const { email, password } = req.body
   
     if (!email || !password) {
-      return res.status(400).json({ message: 'email and password required' })
+      return res.status(400).json({ message: 'Email i hasło wymagane' })
     }
   
     const user = await User.findOne({ where: { email } })
     if (!user) {
-      return res.status(400).json({ message: 'invalid credentials' })
+      return res.status(400).json({ message: 'Niepoprawne dane' })
     }
   
     const valid = await bcrypt.compare(password, user.password)
     if (!valid) {
-      return res.status(400).json({ message: 'invalid credentials' })
+      return res.status(400).json({ message: 'Niepoprawne dane' })
     }
   
     const secret = process.env.JWT_SECRET

@@ -6,6 +6,6 @@ import { authenticateJWT } from '../middleware/auth.middleware';
 const router = Router();
 
 router.post('/', authenticateJWT, createOrder);
-router.get('/', authenticateJWT, createOrder);
+router.get('/', authenticateJWT, getOrders);
 
 export default router;

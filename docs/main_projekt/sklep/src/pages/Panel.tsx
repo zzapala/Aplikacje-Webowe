@@ -1,30 +1,31 @@
 import LogoutButton from "../components/LogoutButton"
 import "./Panel.css"
 import { useAuth } from "../hooks/useAuth";
-
+import OrdersList from "../components/OrdersList"; // Dodaj ten import
 
 function Panel() {
     const { user, loading } = useAuth();
 
     if (loading) return <p>Ładowanie danych użytkownika...</p>;
     if (!user) return <p>Nie jesteś zalogowany</p>;
+    
     return (
         <div className="profile-panel">
             <div className="profile-panel_personal-info">
-                <div className="user-data">
-                    <img src="/user.png" className="u4ser-pic"></img>
+                <img src="/user.png" className="user-pic" alt="user"></img>
+                <div className="user-data-left">
                     <h2 className="user-name">Witaj, {user.login}</h2>
+                    <div className="logout"><LogoutButton /></div>
                 </div>
-                <div className="logout"><LogoutButton /></div>
             </div>
             <div className="profile-panel_orders-data">
-                <div className="orders-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, labore quod soluta autem nisi harum nobis, molestiae est officia cum impedit veniam ratione, expedita accusantium mollitia. Optio consectetur cupiditate cumque.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore optio doloremque magnam cupiditate recusandae alias quod, iste non minus quisquam eveniet, maiores incidunt, ad tenetur voluptatum sequi eius corrupti. Sed?
+                <div className="orders-info">
+                    <h2>Twoje zamówienia:</h2>
+                    <OrdersList />
                 </div>
             </div>
         </div>
-
     )
 }
 
-export default Panel
+export default Panel;

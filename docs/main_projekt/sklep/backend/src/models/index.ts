@@ -6,6 +6,7 @@ import { Favourite } from './Favourite'
 import { Cart } from './Cart'
 import { Orders } from './Orders'
 import { OrderItem } from './OrderItem'
+import { Review } from './Review'
 
 // ===== RELACJE =====
 
@@ -56,6 +57,8 @@ OrderItem.belongsTo(Orders, { foreignKey: 'orderId' });
 Book.hasMany(OrderItem, { foreignKey: 'bookId' });
 OrderItem.belongsTo(Book, { foreignKey: 'bookId' });
 
+Review.belongsTo(User, { foreignKey: 'userId' });
+User.hasMany(Review, { foreignKey: 'userId' });
 
 
 export {
@@ -65,5 +68,6 @@ export {
   Favourite,
   Cart,
   Orders,
-  OrderItem
+  OrderItem,
+  Review
 }

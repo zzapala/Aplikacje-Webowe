@@ -6,6 +6,9 @@ export class FavouriteController {
   // dodaj do ulubionych
   static async add(req: Request, res: Response) {
     try {
+      if (!req.user) {
+        return res.status(401).json({ message: 'Brak autoryzacji' })
+      }
       const userId = req.user.id
       const { bookId } = req.body
 
@@ -37,6 +40,9 @@ export class FavouriteController {
   // usuń z ulubionych
   static async remove(req: Request, res: Response) {
     try {
+      if (!req.user) {
+        return res.status(401).json({ message: 'Brak autoryzacji' })
+      }
       const userId = req.user.id
       const { bookId } = req.params
 
@@ -61,6 +67,9 @@ export class FavouriteController {
   // lista ulubionych książek usera
   static async list(req: Request, res: Response) {
     try {
+      if (!req.user) {
+        return res.status(401).json({ message: 'Brak autoryzacji' })
+      }
       const userId = req.user.id
 
       const favourites = await Favourite.findAll({

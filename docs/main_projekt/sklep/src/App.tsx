@@ -12,6 +12,7 @@ import Ulubione from "./pages/Ulubione"
 import './App.css'
 import Rejestracja from "./pages/Rejestracja"
 import { AuthProvider } from "./context/AuthContext"
+import Footer from "./pages/Footer"
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/wishlist" element={<Ulubione />} />
         </Routes>
       </main>
+      <Footer />
       </AuthProvider>
     </BrowserRouter>
   )

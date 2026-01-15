@@ -11,7 +11,7 @@ import { useAuth } from "../hooks/useAuth";
 function Header() {
     const { user, loading } = useAuth();
 
-    if (loading) return null; // albo spinner
+    if (loading) return null; 
 
     const isLogged = !!user;
 

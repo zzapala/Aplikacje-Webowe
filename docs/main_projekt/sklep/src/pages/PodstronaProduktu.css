@@ -81,3 +81,115 @@
     font-size: 40px;
     font-weight: 800;
 }
+
+/* Kontener opinii */
+.opinions-section {
+    margin-top: 30px;
+    background-color: var(--bg-section);
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+/* Formularz dodawania opinii */
+.add-opinion-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.add-opinion-form textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid var(--accent-middle);
+    font-size: 1rem;
+    resize: vertical;
+    background-color: var(--bg-main);
+    color: var(--accent);
+}
+
+.add-opinion-form select {
+    width: 120px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid var(--accent-middle);
+    background-color: var(--bg-main);
+    color: var(--accent);
+}
+
+.add-opinion-form button {
+    width: 160px;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--accent);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.add-opinion-form button:hover {
+    background-color: var(--accent-hover);
+    transition: 0.5s;
+}
+
+/* Lista opinii */
+.opinions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.opinion {
+    background: #f9f9f9;
+    border: 1px solid var(--accent-middle);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.opinion-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--accent-middle);
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+.opinion-author {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.opinion-rating {
+    color: var(--accent);
+}
+
+.opinion-text {
+    font-size: 0.95em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.opinion-delete-button {
+    margin-top: 10px;
+    width: 160px;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--accent);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.opinion-delete-button:hover {
+    background-color: var(--accent-hover);
+    transition: 0.5s;
+}
